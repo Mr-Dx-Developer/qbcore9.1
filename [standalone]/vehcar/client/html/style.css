@@ -1,0 +1,299 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    width: 75.5vh;
+    height: 35vh;
+    background-color: #222631f1;
+    border-radius: 20px;
+    border: 4px solid #314660;
+    margin-left: 55vh;
+    bottom: 5vh;
+}
+
+.veh-img {
+    margin-left: 19vh;
+}
+
+.lh {
+    line-height: 3.6vh;
+}
+
+.progbar {
+    display: inline-block;
+    width: 60%;
+    border-radius: 10px;
+    background: #000000;
+    height: 9px;
+    margin-left: 13px;
+    margin-top: 13px;
+}
+
+.progbar-inner {
+    background: rgb(206, 203, 21);
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+} 
+
+.power-btn {
+    height: 4.5vh;
+    width: 4.5vh;
+    text-align: center;
+    background-color: rgb(255, 4, 4);
+    border-radius: 50%;
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    border: 2px solid #314660;
+    text-align: center;
+    margin-left: 9.6vh;
+    margin-top: 2.6vh;
+}
+
+.fa-power-off {
+    margin-top: 1.1vh
+}
+
+.icon {
+    margin-top: .5vh;
+    font-size: 19px;
+}
+
+.close {
+    border-radius: 50%;
+    background-color: #314660de;
+    border: 2px solid #314660de;
+    width: 3.5vh;
+    height: 3.5vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(155, 49, 49);
+    margin-top: -29vh;
+    margin-left: 1vh;
+}
+
+.close:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(155, 49, 49);
+}
+
+.fa-times {
+    margin-top: 0.55vh;
+}
+
+.power-btn:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(182, 19, 19);
+}
+
+.veh-option {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: auto;
+    width: 17vh;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #314660de;
+    border: 2px solid #314660de;
+}
+
+.veh-option:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(206, 21, 21);
+    color: rgb(206, 21, 21);
+}
+
+.window-option {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: 15px;
+    width: 15px;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.5vh;
+    border-radius: 50%;
+    background-color: #314660de;
+    border: 2px solid #314660de;
+}
+
+.window-option:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(206, 21, 21);
+    color: rgb(206, 21, 21);
+}
+
+.seat-option {
+    position: absolute;
+    color: white;
+    height: 15px;
+    width: 15px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 20%;
+    background-color: #314660de;
+    border: 2px solid #314660de;
+}
+
+.seat1 {
+    top: 16vh;
+    left: 22vh;
+}
+
+.seat2 {
+    top: 16vh;
+    left: 26vh;
+}
+
+.seat3 {
+    top: 21vh;
+    left: 22vh;
+}
+
+.seat4 {
+    top: 21vh;
+    left: 26vh;
+}
+
+.seat-option:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(206, 21, 21);
+    color: rgb(206, 21, 21);
+}
+
+.hood {
+    width: 90px; 
+    top: 24px;
+    left: 20.6vh;
+}
+
+.driver-door {
+    width: 110px; 
+    top: 16vh;
+    left: 7.8vh;
+}
+
+.f-passenger {
+    width: 140px; 
+    top: 16vh;
+    left: 31.5vh;
+}
+
+.l-passenger {
+    width: 140px; 
+    top: 21vh;
+    left: 5vh;
+}
+
+.r-passenger {
+    width: 140px; 
+    top: 21vh;
+    left: 31.5vh;
+}
+
+.trunk {
+    width: 90px; 
+    left: 20.5vh;
+    top: 30vh;
+}
+
+.window1 {
+    top: 16vh;
+    left: 4vh;
+}
+
+.window2 {
+    top: 16vh;
+    left: 46.8vh;
+}
+
+.window3 {
+    top: 21vh;
+    left: 1.2vh;
+}
+
+.window4 {
+    top: 21vh;
+    left: 46.8vh;
+}
+
+img {
+    margin-top: 4.5vh;
+    width: 13vh;
+}
+
+.secondary-vehicle-controls {
+    position: absolute;
+    margin-left: 140vh;
+}
+
+.vehicle-stats {
+    position: absolute;
+    margin-left: 105.6vh;
+    top: 59.5vh;
+}
+
+.power-controls {
+    width: 20vw;
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    left: -33.7vh;
+    top: 83.5vh;
+}
+
+.power-ctrl-btn {
+    width: 6.25vw;
+    background: #314660b9;
+    height: 4vh;
+    margin: 3px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    line-height: 45px;
+    text-align: center  ;
+    border: 2px solid #314660b9;
+}
+
+.power-ctrl-btn:hover {
+    background-color: #1a1c24;
+    border: 2px solid rgb(206, 21, 21);
+    color: rgb(206, 21, 21);
+}
+
+.sec-section {
+    background-color: #314660b9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 21.8vh;
+    height: 3vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0.88vh;
+}

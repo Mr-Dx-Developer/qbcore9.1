@@ -1,0 +1,79 @@
+Example on adding more chains
+
+In qb-core/shared/items.lua add this
+['']  					= {['name'] = '', 			['label'] = '',		['weight'] = 1,  		['type'] = 'item',  	['image'] = '.png',  			['unique'] = true,  	['useable'] = true,  	['shouldClose'] = true,  	['combinable'] = nil, 	['description'] = ''},
+
+
+in qb-chains/client.lua add this
+local wearing32 = false   -- After wearing add a number to represent the chain make sure each chain has a different number (wearing32 is the next one)
+CreateThread(function()
+    while true do
+        local sleep = 5000 -- If you want chain taken off quicker when item drop or removed change this number
+		if LocalPlayer.state.isLoggedIn then
+            QBCore.Functions.TriggerCallback('qb-chains:server:event_name_here', function(HasItem)
+                if not HasItem then
+                    if wearing32 then
+                        wearing32 = false
+                        TriggerEvent('animations:client:EmoteCommandStart', {"adjusttie"})
+                        QBCore.Functions.Progressbar("chain_misc", "Taking off chain..", 3000, false, true, {
+                            disableMovement = false,
+                            disableCarMovement = false,
+                            disableMouse = false,
+                            disableCombat = true,
+                        }, {}, {}, {}, function() -- Done
+                            local ped = PlayerPedId()
+                            SetPedComponentVariation(ped, 7, 0)
+                            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                        end)
+                        
+                    end
+                end
+            end)
+        end
+		Wait(sleep)
+    end
+end)
+RegisterNetEvent('chains:client:event_name_here', function(itemName)
+    local ped = PlayerPedId()
+    if not wearing32 then
+        wearing32 = true
+        TriggerEvent('animations:client:EmoteCommandStart', {"adjusttie"})
+        QBCore.Functions.Progressbar("chain_misc", "Putting on chain..", 3000, false, true, {
+            disableMovement = false,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            SetPedComponentVariation(ped, 7, 10)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end)
+    elseif wearing32 then
+        wearing32 = false
+        TriggerEvent('animations:client:EmoteCommandStart', {"adjusttie"})
+        QBCore.Functions.Progressbar("chain_misc", "Taking off chain..", 3000, false, true, {
+            disableMovement = false,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Done
+            SetPedComponentVariation(ped, 7, 0)
+            TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        end)
+    end
+end)
+
+in qb-chains/server.lua add this
+QBCore.Functions.CreateCallback('qb-chains:server:event_name_here', function(source, cb)
+    local Player = QBCore.Functions.GetPlayer(source)
+    local Item = Player.Functions.GetItemByName("item_name_here")
+    if Item ~= nil then
+        cb(true)
+    else
+        cb(false)
+    end
+end)
+QBCore.Functions.CreateUseableItem("item_name_here", function(source, item)
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    TriggerClientEvent("chains:client:name_of_event_here", src, item.name) -- Event name that triggers the putting on of the chain
+end)

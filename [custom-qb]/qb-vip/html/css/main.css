@@ -1,0 +1,3384 @@
+@font-face {
+    font-family: "Acrom";
+    src: url("../font/Acrom-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TT Norms";
+    src: url("../font/TTNorms-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url("../font/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url("../font/Rubik-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Inter Thin";
+    src: url("../font/Inter-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal";
+    src: url("../font/ZabalDEMO-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal Bold";
+    src: url("../font/ZabalDEMO-Bold.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    /* z-index: 999; */
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.generalContainer {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/html/images/cropped-1920-1080-11680331.png");
+    background-size: cover;
+}
+
+.topSection {
+    display: flex;
+    /* background-color: rgba(255, 0, 0, 0.129); */
+    height: 4rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 96.5%;
+}
+
+.titleArea {
+    display: flex;
+    text-transform: uppercase;
+    /* background-color: red; */
+    width: fit-content;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 45px;
+    font-family: Rubik Bold;
+    color: #ffffff;
+}
+
+.title2 {
+    margin-left: 0.8rem;
+    color: #ff8a8a;
+    text-shadow: 0px 0px 25.4407px rgba(255, 138, 138, 0.34);
+}
+
+.topRectangle {
+    height: 2px;
+    width: 92rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 8px;
+}
+
+/* CATEGORY STARTED */
+
+.categorieSection {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 50px;
+    width: 116rem;
+    /* background-color: rgba(255, 0, 0, 0.1); */
+}
+
+.mainMenuButton {
+    background: linear-gradient(0deg, rgba(56, 49, 31, 0.9), rgba(56, 56, 10, 0.12)) padding-box,
+        linear-gradient(to top, rgba(255, 239, 93, 0.494), rgba(56, 49, 31, 0.9)) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    height: 3rem;
+    width: 4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mainMenuButton:hover {
+    background: linear-gradient(0deg, rgba(97, 81, 45, 0.9), rgba(103, 103, 15, 0.12)) padding-box,
+        linear-gradient(to top, rgba(255, 239, 93, 0.494), rgba(56, 49, 31, 0.9)) border-box;
+}
+
+#homeIcon {
+    font-size: 17px;
+    color: white;
+    line-height: 3rem;
+}
+
+.categorieItemList {
+    /* background-color: rgba(255, 0, 0, 0.124); */
+    display: flex;
+    height: 3rem;
+    width: 82rem;
+    margin-left: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.categorieItemList::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.categorieItem {
+    color: rgba(255, 255, 255, 0.51);
+    font-family: Acrom;
+    /* background-color: red; */
+    min-width: 230px;
+    /* font-size: 30px; */
+    margin-top: 0.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, rgba(61, 32, 32, 0.9), rgba(71, 43, 43, 0.6)) padding-box,
+        linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(61, 32, 32, 0.6)) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.categorieItem:hover {
+    background: linear-gradient(0deg, rgba(81, 45, 45, 0.9), rgba(91, 58, 58, 0.6)) padding-box,
+        linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(61, 32, 32, 0.6)) border-box;
+}
+
+.categorieItem.selected {
+    background: linear-gradient(0deg, rgba(107, 60, 60, 0.9), rgba(131, 85, 85, 0.6)) padding-box,
+        linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(123, 58, 58, 0.5)) border-box;
+}
+
+.categorieItem:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.charInfoSection {
+    display: flex;
+    position: absolute;
+    background: linear-gradient(360deg, rgba(255, 138, 138, 0.25) 0%, rgba(0, 0, 0, 0) 105.75%);
+    border-radius: 7px;
+    width: 27rem;
+    height: 5rem;
+    top: 5.9rem;
+    /* bottom: 0; */
+    margin-left: 89rem;
+}
+
+.profileImageSection {
+    /* background-color: red; */
+    width: 39px;
+    height: 39px;
+    border-radius: 37px;
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    overflow: hidden;
+}
+.profileImageSection img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.charNameSection {
+    display: flex;
+    /* background-color: red; */
+    width: 7.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.charName {
+    line-height: 5rem;
+    margin-left: 0.5rem;
+    font-family: Acrom;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.charSurName {
+    line-height: 4.9rem;
+    margin-left: 0.25rem;
+    font-family: Zabal;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+#creditCardIcon {
+    color: #f8ca48;
+    line-height: 5rem;
+    font-size: 23px;
+}
+
+.profileCreditSection {
+    margin-left: 0.5rem;
+    display: flex;
+    line-height: 5rem;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 13px;
+    width: 6.5rem;
+}
+
+.creditCount {
+    margin-left: 0.5rem;
+}
+
+.creditText {
+    margin-left: 0.2rem;
+    font-family: Zabal Bold;
+}
+
+.buyCreditButton {
+    cursor: pointer;
+    margin-left: 1.2rem;
+    background: #f8ca48;
+    border-radius: 3px;
+    height: 33px;
+    line-height: 33px;
+    width: 6rem;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1.4rem;
+    color: rgba(0, 0, 0, 0.789);
+    font-family: Zabal Bold;
+}
+
+.buyCreditButton:hover {
+    background: #f8c94800;
+    color: white;
+    border: 1px solid #f8ca48;
+}
+
+.generalMiddle {
+    /* background-color: rgba(255, 0, 0, 0.111); */
+    height: 52rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 116rem;
+}
+
+.blackLinear {
+    position: absolute;
+    /* background-color: red; */
+    border-radius: 10px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60.09%);
+
+    height: 818px;
+    margin-left: 1px;
+    width: 427px;
+}
+
+.leftRedeemBox {
+    background: linear-gradient(0deg, rgba(62, 31, 31, 0.6), rgba(48, 27, 27, 0.6)) padding-box,
+        linear-gradient(to top, rgba(255, 238, 0, 0.7), rgba(62, 31, 31, 0.3)) border-box;
+    border: 1px solid transparent;
+    height: 820px;
+    width: 430px;
+    filter: drop-shadow(0px 0px 18px rgba(248, 202, 72, 0.06));
+    border-radius: 10px;
+}
+
+.leftRedeemBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.redeemCodeTextArea {
+    position: absolute;
+    display: flex;
+    font-family: Acrom;
+    font-size: 25px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.redeemText {
+    color: #f8ca48;
+    text-shadow: 0px 0px 11px rgba(248, 202, 72, 0.4);
+}
+
+.codeText {
+    color: #d6d6d6;
+    margin-left: 0.5rem;
+}
+
+.redeemCodeDescArea {
+    position: absolute;
+    width: 80%;
+    /* background-color: red; */
+    text-transform: uppercase;
+
+    color: #9c9494;
+    font-family: Zabal;
+    font-size: 11px;
+    margin-left: 2.1rem;
+    margin-top: 4.3rem;
+}
+
+.writeTheCode {
+    z-index: 999;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 38rem;
+    width: 270px;
+    height: 60px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: Zabal;
+    color: #909090;
+
+    background: rgba(7, 7, 7, 0.7);
+    border: 1px solid rgba(248, 202, 72, 0.35);
+    border-radius: 5px;
+    outline: none;
+}
+
+.approveButton {
+    position: absolute;
+    z-index: 999;
+    background: #f8ca48;
+    box-shadow: 0px 0px 18px rgba(255, 218, 113, 0.26);
+    border-radius: 3px;
+    height: 47px;
+    width: 178px;
+    text-align: center;
+    line-height: 47px;
+    font-family: Acrom;
+    margin-left: 8rem;
+    margin-top: 42.7rem;
+    cursor: pointer;
+}
+
+.approveButton:hover {
+    background: #f8c94800;
+    border: 1px solid #f8ca48;
+    color: white;
+}
+
+.redeemInfoArea {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+    position: absolute;
+    height: 2rem;
+    width: 17rem;
+    /* background-color: red; */
+    margin-left: 5rem;
+    margin-top: 35.6rem;
+    color: #b5b5b5;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Inter;
+    /* line-height: 5rem; */
+}
+
+#InfoIcon {
+    font-size: 12px;
+    line-height: 3rem;
+    margin-right: 0.3rem;
+    color: #2e2e2e;
+}
+
+#InfoIconCar {
+    font-size: 12px;
+    line-height: 3rem;
+    margin-right: 0.3rem;
+    color: #595959;
+}
+
+.upperMidCarBox {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(17, 15, 15, 0.6), rgba(23, 22, 22, 0.6)) padding-box,
+        linear-gradient(to top, rgba(219, 107, 205, 0.5), rgba(23, 22, 22, 0.3)) border-box;
+    border: 1px solid transparent;
+    height: 24.5rem;
+    border-radius: 10px;
+    width: 57.4rem;
+    margin-left: 29.4rem;
+    margin-top: -51.25rem;
+    overflow: hidden;
+}
+.upperMidCarBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.carBoxInfoArea {
+    z-index: 98;
+    text-transform: uppercase;
+    display: flex;
+    /* background-color: red; */
+    position: absolute;
+    font-family: Zabal;
+    color: #b4b4b4;
+    width: 25rem;
+    height: 2rem;
+    margin-left: 9.5rem;
+    margin-top: 4rem;
+    font-size: 8px;
+}
+
+.carBoxInfoText {
+    margin-left: -2.9rem;
+    line-height: 3rem;
+}
+
+.carBoxTitleArea {
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    font-size: 34px;
+    font-family: Acrom;
+    color: white;
+    /* background-color: rgba(0, 0, 255, 0.116); */
+    width: 28rem;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    height: 4rem;
+    letter-spacing: -1px;
+}
+
+.carBoxDoYouNeed {
+    margin-right: 0.5rem;
+    color: #ba6ff5;
+}
+
+.carBoxDescription {
+    position: absolute;
+    margin-top: 8.9rem;
+    margin-left: 11rem;
+    width: 12rem;
+    font-family: Zabal;
+    font-size: 11px;
+    color: #cecece;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.carBoxButton {
+    z-index: 987;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 12rem;
+    width: 155px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #d1d1d1;
+    font-family: Inter;
+    border: 1.34286px solid #ba6ff5;
+    /* box-shadow: (0px 0px 13.4286px #7198ff); */
+    box-shadow: 0px 0px 13px #7197ff31;
+    border-radius: 6.71429px;
+    cursor: pointer;
+}
+
+.carBoxButton:hover {
+    background: #ba6ff5;
+    color: black;
+    box-shadow: 0px 0px 13.4286px rgba(186, 111, 245, 0.24);
+}
+
+.carButtonBelowText {
+    position: absolute;
+    margin-top: 17.3rem;
+    margin-left: 12.95rem;
+    font-family: Zabal Bold;
+    font-size: 10px;
+    color: #696969;
+    /* background-color: red; */
+    width: 8rem;
+    text-align: center;
+}
+
+.bottomMidGunBox {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(17, 15, 15, 0.6), rgba(23, 22, 22, 0.6)) padding-box,
+        linear-gradient(to top, rgba(99, 172, 209, 0.5), rgba(23, 22, 22, 0.3)) border-box;
+    border: 1px solid transparent;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 24.5rem;
+    width: 57.4rem;
+    margin-left: 29.4rem;
+    margin-top: -24.6rem;
+}
+
+.gunBoxTitleArea {
+    display: flex;
+    font-size: 34px;
+    font-family: Acrom;
+    color: white;
+    /* background-color: red; */
+    position: absolute;
+    height: 3rem;
+    width: 25rem;
+    margin-top: 7rem;
+    margin-left: 28rem;
+}
+
+.gunDoYouNeedText {
+    color: #7198ff;
+    margin-right: 0.5rem;
+}
+
+.gunBoxInfoArea {
+    font-family: Zabal;
+    color: #b4b4b4;
+    font-size: 8px;
+    position: absolute;
+    display: flex;
+    text-transform: uppercase;
+    /* background-color: red; */
+    width: 20rem;
+    justify-content: center;
+    margin-top: 6.2rem;
+    margin-left: 30rem;
+}
+
+#InfoIconGun {
+    margin-right: 0.4rem;
+    font-size: 12px;
+    line-height: 9px;
+    margin-right: 0.3rem;
+    color: #595959;
+}
+
+.gunBoxDescription {
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 33rem;
+    width: 14rem;
+    text-align: center;
+    font-family: Zabal;
+    font-size: 11px;
+    color: #cecece;
+}
+
+.gunBoxButton {
+    z-index: 987;
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 35rem;
+    width: 155px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #d1d1d1;
+    font-family: Inter;
+    border: 1px solid #7198ff;
+    /* box-shadow: (0px 0px 13.4286px #7198ff); */
+    box-shadow: 0px 0px 13px #7197ff61;
+    border-radius: 6.71429px;
+    cursor: pointer;
+}
+
+.gunBoxButton:hover {
+    background: #7198ff;
+    color: black;
+    box-shadow: 0px 0px 13.4286px rgba(113, 152, 255, 0.24);
+    /* border-radius: 6.71429px; */
+}
+
+.gunButtonBelowText {
+    position: absolute;
+    margin-top: 17.3rem;
+    margin-left: 35.95rem;
+    font-family: Zabal Bold;
+    font-size: 10px;
+    color: #999999;
+    /* background-color: red; */
+    width: 8rem;
+    text-align: center;
+}
+
+.bottomMidGunBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.upperRightOtherBox {
+    position: relative;
+    /* background-color: red; */
+    background: linear-gradient(0deg, rgba(17, 15, 15, 0.6), rgba(23, 22, 22, 0.6)) padding-box,
+        linear-gradient(to top, rgba(115, 184, 126, 0.5), rgba(23, 22, 22, 0.3)) border-box;
+    border: 1px solid transparent;
+    width: 27rem;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 24.5rem;
+    margin-left: 89rem;
+    margin-top: -51.25rem;
+}
+
+.otherBoxButton {
+    z-index: 987;
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 9rem;
+    width: 155px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #d1d1d1;
+    font-family: Inter;
+    border: 1px solid #bcf3a7;
+    box-shadow: 0px 0px 13px #bdf3a73a;
+    border-radius: 6.71429px;
+    cursor: pointer;
+}
+
+.otherBoxButton:hover {
+    color: black;
+    background: #bcf3a7;
+}
+
+.moneyBoxButton {
+    z-index: 987;
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 9rem;
+    width: 155px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: #d1d1d1;
+    font-family: Inter;
+    border: 1px solid #ff7d7d;
+    box-shadow: 0px 0px 13px #ff7d7d44;
+    border-radius: 6.71429px;
+    cursor: pointer;
+}
+
+.moneyBoxButton:hover {
+    color: black;
+    background: #ff8a8a;
+}
+
+.otherBoxInfoArea {
+    display: flex;
+    position: absolute;
+    /* background-color: red; */
+    margin-top: 2.5rem;
+    margin-left: 9rem;
+    width: 9.7rem;
+    font-family: Inter;
+    font-size: 9px;
+    color: #aaaaaa;
+    justify-content: center;
+}
+
+.moneyBoxInfoArea {
+    display: flex;
+    position: absolute;
+    /* background-color: red; */
+    margin-top: 2.5rem;
+    margin-left: 9rem;
+    width: 9.7rem;
+    font-family: Inter;
+    font-size: 9px;
+    color: #aaaaaa;
+    justify-content: center;
+}
+
+#InfoIconOther {
+    margin-right: 0.3rem;
+    line-height: 11px;
+}
+
+#InfoIconMoney {
+    margin-right: 0.3rem;
+    line-height: 11px;
+}
+
+.otherBoxDescription {
+    position: absolute;
+    margin-top: 7.5rem;
+    color: #cccccc;
+    font-family: Inter;
+    font-size: 11px;
+    /* background-color: red; */
+    margin-left: 6.9rem;
+    width: 14rem;
+    text-align: center;
+}
+
+.moneyBoxDescription {
+    position: absolute;
+    margin-top: 7.5rem;
+    color: #cccccc;
+    font-family: Inter;
+    font-size: 11px;
+    /* background-color: red; */
+    margin-left: 6.9rem;
+    width: 14rem;
+    text-align: center;
+}
+
+.otherBoxLinear {
+    /* background-color: red; */
+    background: linear-gradient(0deg, rgba(198, 255, 178, 0.4) -10.4%, rgba(198, 255, 178, 0) 59.07%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.carBoxLinear {
+    /* background-color: red; */
+    background: linear-gradient(360deg, rgba(191, 111, 255, 0.1) -12.13%, rgba(217, 217, 217, 0) 77.87%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.gunBoxLinear {
+    /* background-color: red; */
+    background: linear-gradient(360deg, rgba(96, 120, 190, 0.4) -12.13%, rgba(217, 217, 217, 0) 56.67%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.moneyBoxLinear {
+    background: linear-gradient(360deg, rgba(255, 97, 97, 0.4) -12.13%, rgba(217, 217, 217, 0) 56.67%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.upperRightOtherBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.bottomRightMoneyBox {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(17, 15, 15, 0.6), rgba(23, 22, 22, 0.6)) padding-box,
+        linear-gradient(to top, rgba(217, 152, 106, 0.5), rgba(23, 22, 22, 0.3)) border-box;
+    border: 1px solid transparent;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 24.5rem;
+    width: 27rem;
+    margin-left: 89rem;
+    margin-top: 2.15rem;
+}
+
+.bottomRightMoneyBox img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ! VEHICLE AREA */
+
+.homeMenu {
+    /* display: none; */
+}
+
+.vehicleMenu {
+    display: none;
+}
+
+.itemsMenu {
+    display: none;
+}
+
+.buyCreditMenu {
+    display: none;
+}
+
+.leftSelectedCarDetailsArea {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) padding-box,
+        linear-gradient(to top, rgba(71, 32, 32, 0.4), rgba(0, 0, 0, 0.7)) border-box;
+    border: 2px solid transparent;
+    height: 820px;
+    width: 430px;
+    /* filter: drop-shadow(0px 0px 18px rgba(248, 202, 72, 0.06)); */
+    border-radius: 20px;
+}
+
+.leftCarNameArea {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 22px;
+    margin-top: 3rem;
+    text-align: center;
+    /* height: 2.5rem; */
+}
+
+.leftCarBrand {
+    font-family: Zabal Bold;
+    color: #ff8a8a;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.leftCarYear {
+    text-transform: uppercase;
+    margin-top: 0.1rem;
+    font-size: 12px;
+    font-family: Inter;
+    text-align: center;
+    color: #b1b1b1;
+}
+
+.leftCarImageArea {
+    /* background-color: red; */
+    width: 90%;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    height: 14rem;
+}
+
+.leftCarImageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.leftGraphArea {
+    margin-top: 2rem;
+    /* background-color: rgba(255, 0, 0, 0.113); */
+    /* height: 10rem; */
+}
+
+.graphAreaItem {
+    margin-top: 2rem;
+    /* background-color: red; */
+    margin-left: 2.5rem;
+    display: flex;
+}
+
+#leftGraphIcon {
+    color: #b0b0b0;
+    font-size: 27px;
+}
+
+.leftGraphOut {
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+    background: rgba(58, 58, 58, 0.5);
+    height: 15px;
+    width: 270px;
+    border-radius: 27px;
+}
+
+.leftGraphFill {
+    background: rgba(255, 138, 138, 0.5);
+    max-width: 97%;
+    width: 55%;
+    height: 7px;
+    border-radius: 18px;
+    margin-top: 4px;
+    margin-left: 4px;
+    transition-property: width;
+    transition-duration: 0.4s;
+}
+
+.graphValueText {
+    color: #ffffff;
+    font-size: 10px;
+    margin-top: 0.46rem;
+    margin-left: 0.5rem;
+    font-family: Zabal;
+}
+
+.leftItemCheckArea {
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    width: 80%;
+    height: 1rem;
+}
+
+.leftItemCheckArea input[type="checkbox"] {
+    opacity: 0;
+}
+
+.leftItemCheckArea label {
+    cursor: pointer;
+    color: #d1d1d1;
+    font-family: Inter;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    padding-left: 18px;
+}
+
+.leftItemCheckArea label::before,
+.leftItemCheckArea label::after {
+    position: absolute;
+    content: "";
+    outline: none;
+    display: inline-block;
+}
+
+.leftItemCheckArea label::before {
+    height: 21px;
+    width: 21px;
+    background-color: #1b1b1b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    left: -15px;
+    top: -4px;
+    outline: none;
+    border-radius: 3px;
+}
+
+/*Checkmark of the fake checkbox*/
+.leftItemCheckArea label::after {
+    height: 5px;
+    width: 9px;
+    outline: none;
+    border-left: 2px solid #ff8a8a;
+    border-bottom: 2px solid #ff8a8a;
+
+    transform: rotate(-45deg);
+
+    left: -9px;
+    top: 3px;
+}
+
+.leftItemCheckArea input[type="checkbox"] + label::after {
+    content: none;
+    outline: none;
+}
+
+.leftItemCheckArea input[type="checkbox"]:checked + label::after {
+    content: "";
+    outline: none;
+}
+
+#checkBoxLabel span {
+    color: #f8ca48;
+    margin-left: 0.20000000000000018rem;
+}
+
+.leftItemPlateInput {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+    width: 342px;
+    height: 42px;
+    background: rgba(17, 17, 17, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+    padding-left: 1rem;
+    color: rgba(255, 255, 255, 0.42);
+    outline: none;
+    font-family: Inter;
+    font-size: 11px;
+    transition-property: border;
+    transition-duration: 0.2s;
+}
+
+.leftBuyButton {
+    cursor: pointer;
+    border: 3px solid #f8ca48;
+    border-radius: 7px;
+    width: 340px;
+    height: 77px;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+}
+
+.leftBuyButton:hover {
+    background: #f8ca48;
+    color: black;
+}
+
+.buyButtonPrice {
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px;
+    font-family: Zabal Bold;
+}
+
+.buyButtonBuyText {
+    font-size: 15px;
+    font-family: Acrom;
+    text-align: center;
+    margin-top: -14px;
+}
+
+.rightCarListArea {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    /* background-color: rgba(255, 0, 0, 0.042); */
+    width: 90rem;
+    height: 51.4rem;
+    position: relative;
+    left: 440px;
+    top: -821px;
+    overflow-y: auto;
+}
+
+.rightCarListArea::-webkit-scrollbar {
+    /* padding-left: 75px; */
+    width: 0px;
+    height: 0px;
+}
+
+.carListItem {
+    background: linear-gradient(0deg, rgba(14, 6, 6, 0.8), rgba(12, 5, 5, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+    border: 1px solid transparent;
+    /* background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 138, 138, 0.09) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+    width: 435px;
+    height: 388px;
+    margin-left: 38px;
+    margin-bottom: 44px;
+    cursor: pointer;
+}
+
+.carListItem:nth-last-child(-n + 3):nth-child(3n + 1),
+.carListItem:nth-last-child(-n + 3):nth-child(3n + 1) ~ .carListItem {
+    /* margin-left: 0px; */
+    margin-bottom: 0px;
+}
+
+.carListItem.selected {
+    background: linear-gradient(0deg, rgba(25, 10, 10, 0.8), rgba(19, 7, 7, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+}
+
+.carListItem:hover {
+    background: linear-gradient(0deg, rgba(30, 12, 12, 0.8), rgba(26, 9, 9, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+}
+
+.listItemCarNameArea {
+    /* background-color: red; */
+    font-size: 22px;
+    width: 20rem;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-family: Acrom;
+    color: white;
+}
+
+.carBrand {
+    color: #ff8a8a;
+    font-family: Zabal Bold;
+}
+
+.carModel {
+    font-family: Inter;
+}
+
+.caryearModel {
+    color: #b1b1b1;
+    font-family: Inter;
+    font-size: 13px;
+}
+
+.listItemCarImageArea {
+    /* background-color: red; */
+    height: 13rem;
+    width: 20rem;
+    margin-top: 2rem;
+    margin-left: 3.7rem;
+}
+
+.listItemCarImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.listItemCreditArea {
+    display: flex;
+    /* background-color: red; */
+    height: 2rem;
+    font-size: 18px;
+    width: 13rem;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+
+.listItemPrice {
+    /* line-height: -100rem; */
+    margin-left: 0.6rem;
+    color: white;
+    font-family: Inter;
+}
+
+.listItemPriceText {
+    margin-left: 0.3rem;
+    font-family: Zabal Bold;
+    color: white;
+}
+
+#creditCardIconList {
+    margin-top: 0.1rem;
+    /* line-height: 95px; */
+    font-size: 18px;
+    color: #f8ca48;
+    /* box-shadow: 0px 0px 10px #f8ca48; */
+}
+
+.listItemMaxSpeedArea {
+    display: flex;
+    /* background-color: red; */
+    justify-content: end;
+    height: 2rem;
+    width: 6.3rem;
+    margin-top: -2.3rem;
+    margin-left: 18rem;
+    /* float: left; */
+}
+
+#itemGraphIcon {
+    font-size: 27px;
+    color: #666666;
+}
+
+.itemMaxSpeedText {
+    color: #dbdbdb;
+    font-family: Zabal;
+    font-size: 13px;
+    margin-left: 0.5rem;
+    margin-top: 0.35rem;
+}
+
+/*  ! ITEMS MENU */
+
+.itemsMenuItemList {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    /* background-color: red; */
+    gap: 38px;
+    height: 830px;
+}
+
+.itemsMenuItem {
+    background: linear-gradient(0deg, rgba(14, 6, 6, 0.8), rgba(12, 5, 5, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+    border: 1px solid transparent;
+    /* background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 138, 138, 0.09) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.5); */
+    border-radius: 20px;
+    width: 435.5px;
+    height: 388px;
+    /* margin-right: 38px; */
+    /* margin-bottom: 44px; */
+    cursor: pointer;
+}
+
+.itemsMenuItem.selected {
+    background: linear-gradient(0deg, rgba(25, 10, 10, 0.8), rgba(19, 7, 7, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+}
+
+.itemsMenuItem:hover {
+    background: linear-gradient(0deg, rgba(30, 12, 12, 0.8), rgba(26, 9, 9, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.3), rgba(20, 7, 7, 0.4)) border-box;
+}
+
+.itemsMenuItemList::-webkit-scrollbar {
+    /* padding-left: 75px; */
+    width: 0px;
+    height: 0px;
+}
+
+.itemMenuItemNameArea {
+    /* background-color: red; */
+    padding-right: 2rem;
+    text-transform: uppercase;
+    font-family: Zabal Bold;
+    margin-left: 2rem;
+    color: #ffffff;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.itemMenuItemImageAreas {
+    /* background-color: red; */
+    height: 13.5rem;
+    width: 21.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.itemMenuItemImageAreas img {
+    /* position: relative; */
+    /* margin: auto; */
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.itemMenuItemCreditArea {
+    display: flex;
+    /* background-color: red; */
+    height: 2rem;
+    font-size: 19px;
+    width: 13rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+.ItemMenuItemPrice {
+    /* line-height: -100rem; */
+    margin-left: 0.6rem;
+    color: white;
+    font-family: Inter;
+}
+
+.ItemMenuItemPriceText {
+    margin-left: 0.3rem;
+    font-family: Zabal Bold;
+    color: white;
+}
+
+#creditCardIconItemList {
+    margin-top: 0.1rem;
+    /* line-height: 95px; */
+    font-size: 18px;
+    color: #f8ca48;
+    /* box-shadow: 0px 0px 10px #f8ca48; */
+}
+
+/* YOU WANT BUY */
+
+.youWantBuySection {
+    z-index: 987987;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.wantBuyPopUp {
+    z-index: 9879897;
+    background: linear-gradient(0deg, rgba(14, 6, 6, 0.9), rgba(12, 5, 5, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.7), rgba(14, 6, 6, 1)) border-box;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    width: 500px;
+    min-height: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -110px;
+}
+
+.wantBuyTitleArea {
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Zabal Bold;
+    font-size: 25px;
+    color: #fff;
+}
+
+.youWantBuyText {
+    color: #7baa4b;
+}
+
+.popUpRectangle {
+    margin-top: 1.5rem;
+    width: 80%;
+    margin-left: 3rem;
+    /* width: 538px; */
+    height: 1px;
+
+    background: rgba(217, 217, 217, 0.17);
+}
+
+.popUpItemList {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 0, 0, 0.057); */
+    margin-top: 2rem;
+    width: 80%;
+    /* height: 12rem; */
+    margin-left: 3rem;
+}
+
+.popUpItem {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* background-color: rgba(0, 0, 255, 0.137); */
+    /* height: 2rem; */
+    /* gap: 10px; */
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    /* margin: 10px; */
+}
+
+.popUpItem:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.popUpItemName {
+    width: 50%;
+    color: white;
+    font-family: Inter;
+    font-size: 11px;
+    /* background-color: red; */
+}
+
+.popUpItemCost {
+    color: #f8ca48;
+    font-family: Inter;
+    font-size: 11px;
+    /* justify-content: end; */
+    text-align: end;
+    /* background-color: green; */
+    width: 50%;
+}
+
+.popUpButtons {
+    display: flex;
+    width: 80%;
+    margin-left: 3rem;
+    /* background-color: red; */
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+.popUpButtonItem {
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    line-height: 3.5rem;
+    font-family: Acrom;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.69);
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 138, 138, 0.144) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 138, 138, 0.16);
+}
+
+.popUpButtonItem:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#popUpBuy {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(157, 255, 97, 0.156) 0%, rgba(0, 0, 0, 0) 100%), rgba(159, 255, 114, 0.08);
+}
+
+#popUpBuy:hover {
+    box-shadow: 0px 0px 15px rgba(90, 255, 32, 0.05);
+}
+
+#popUpCancel:hover {
+    box-shadow: 0px 0px 15px rgba(219, 69, 49, 0.07);
+}
+
+.buyCreditFirstBox {
+    cursor: pointer;
+    position: absolute;
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(173, 255, 216, 0.2) 0%, rgba(173, 255, 216, 0) 100%), rgba(173, 255, 216, 0.22);
+    width: 373px;
+    border-radius: 10px;
+    height: 373px;
+}
+
+.buyCreditFirstBox:hover {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(173, 255, 216, 0.3) 0%, rgba(173, 255, 216, 0) 100%), rgba(173, 255, 216, 0.32);
+}
+
+.buyCreditSecondBox {
+    cursor: pointer;
+    position: absolute;
+    left: 443px;
+    top: 210px;
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 131, 131, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 131, 131, 0.22);
+    width: 680px;
+    height: 373px;
+    border-radius: 10px;
+}
+
+.buyCreditSecondBox:hover {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 131, 131, 0.3) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 131, 131, 0.32);
+}
+
+.buyCreditThirdBox {
+    position: absolute;
+    cursor: pointer;
+    left: 1160px;
+    top: 210px;
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 247, 63, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 215, 72, 0.22);
+    width: 730px;
+    height: 830px;
+    border-radius: 10px;
+}
+
+.buyCreditThirdBox:hover {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 247, 63, 0.3) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 215, 72, 0.32);
+}
+
+.buyCreditFourBox {
+    cursor: pointer;
+    position: absolute;
+    top: 620px;
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(185, 131, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(185, 131, 255, 0.22);
+    width: 1092px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.buyCreditFourBox:hover {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(185, 131, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%), rgba(185, 131, 255, 0.32);
+}
+
+.firstBoxPrice {
+    /* background-color: red; */
+    text-align: center;
+    font-family: Zabal Bold;
+    color: #ffffff;
+    /* line-height: 10rem; */
+    margin-top: 3rem;
+    font-size: 25px;
+}
+
+.firstBoxImageArea {
+    /* background-color: red; */
+    height: 9rem;
+    width: 80%;
+    margin-left: 2.1rem;
+    margin-top: 2rem;
+}
+
+.firstBoxImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.firstBoxGetCredit {
+    color: white;
+    /* color: rgba(255, 255, 255, 0.55); */
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Inter;
+    font-size: 17px;
+}
+
+.firstBoxExtraCredit {
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    margin-top: 0.1rem;
+}
+
+.secondBoxImageArea {
+    position: absolute;
+
+    /* background-color: red; */
+    width: 20rem;
+    height: 15rem;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.secondBoxImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.secondBoxPrice {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 30rem;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-family: Zabal Bold;
+    font-size: 34px;
+    color: white;
+}
+
+.secondBoxGetCredit {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 30rem;
+    margin-top: 15rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    color: white;
+}
+
+.secondBoxExtraCredit {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 28.4rem;
+    margin-top: 16.5rem;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+}
+
+.thirdBoxPrice {
+    /* background-color: red; */
+    text-align: center;
+    font-family: Zabal Bold;
+    color: white;
+    font-size: 40px;
+    margin-top: 4rem;
+}
+
+.thirdBoxGetCredit {
+    margin-top: 3rem;
+    font-family: Inter;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+.thirdBoxExtraCredit {
+    color: rgba(255, 255, 255, 0.55);
+    font-family: Inter;
+    margin-top: 0.2rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+.thirdImageArea {
+    margin-top: 8rem;
+    width: 60%;
+    height: 25rem;
+    margin-left: 9rem;
+}
+
+.thirdImageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fourBoxImageArea {
+    position: absolute;
+
+    /* background-color: red; */
+    width: 20rem;
+    height: 15rem;
+    margin-top: 6.5rem;
+    margin-left: 9rem;
+}
+
+.fourBoxImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.fourBoxPrice {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 47rem;
+    margin-top: 8rem;
+    text-align: center;
+    font-family: Zabal Bold;
+    font-size: 35px;
+    color: white;
+}
+
+.fourBoxGetCredit {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 47.2rem;
+    margin-top: 16rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    color: white;
+}
+
+.fourBoxExtraCredit {
+    position: absolute;
+    /* background-color: red; */
+    margin-left: 45.3rem;
+    margin-top: 17.5rem;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+}
+
+.customizationSection {
+    display: none;
+    position: absolute;
+    z-index: 98254;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+}
+
+/*  */
+
+.customizePopUp {
+    z-index: 9879897;
+    background: linear-gradient(0deg, rgba(14, 6, 6, 0.9), rgba(12, 5, 5, 0.9)) padding-box,
+        linear-gradient(to top, rgba(177, 167, 161, 0.7), rgba(14, 6, 6, 1)) border-box;
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    width: 500px;
+    min-height: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -110px;
+}
+
+.customizeTitleArea {
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Zabal Bold;
+    font-size: 25px;
+    color: #fff;
+}
+
+.customizeBuyText {
+    color: #7baa4b;
+}
+
+.popUpRectangle {
+    margin-top: 1.5rem;
+    width: 80%;
+    margin-left: 3rem;
+    /* width: 538px; */
+    height: 1px;
+
+    background: rgba(217, 217, 217, 0.17);
+}
+
+.customizeItemArea {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 0, 0, 0.057); */
+    margin-top: 2rem;
+    width: 80%;
+    /* height: 12rem; */
+    margin-left: 3rem;
+}
+
+.popUpItem {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* background-color: rgba(0, 0, 255, 0.137); */
+    /* height: 2rem; */
+    /* gap: 10px; */
+    width: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    /* margin: 10px; */
+}
+
+.popUpItem:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.popUpItemName {
+    width: 50%;
+    color: white;
+    font-family: Inter;
+    font-size: 11px;
+    /* background-color: red; */
+}
+
+.popUpItemCost {
+    color: #f8ca48;
+    font-family: Inter;
+    font-size: 11px;
+    /* justify-content: end; */
+    text-align: end;
+    /* background-color: green; */
+    width: 50%;
+}
+
+.popUpButtons {
+    display: flex;
+    width: 80%;
+    margin-left: 3rem;
+    /* background-color: red; */
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+.popUpButtonItem {
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    line-height: 3.5rem;
+    font-family: Acrom;
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.69);
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(255, 138, 138, 0.144) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 138, 138, 0.16);
+}
+
+.popUpButtonItem:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#popUpBuy {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(157, 255, 97, 0.156) 0%, rgba(0, 0, 0, 0) 100%), rgba(159, 255, 114, 0.08);
+}
+
+#popUpBuy:hover {
+    box-shadow: 0px 0px 15px rgba(90, 255, 32, 0.05);
+}
+
+#popUpCancel:hover {
+    box-shadow: 0px 0px 15px rgba(219, 69, 49, 0.07);
+}
+
+.customInput {
+    z-index: 999;
+    /* position: absolute; */
+    /* margin-left: 5rem; */
+    /* margin-top: 38rem; */
+    /* margin-bottom: 5rem; */
+    /* width: 270px; */
+    height: 40px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: Zabal;
+    color: #a3a3a3;
+    outline: none;
+    background: rgba(7, 7, 7, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: border 0.4s;
+}
+
+.customizeInfo {
+    color: rgba(255, 255, 255, 0.686);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+}
+
+#customizeBuy {
+    background: radial-gradient(104.93% 104.93% at 50% 100%, rgba(157, 255, 97, 0.156) 0%, rgba(0, 0, 0, 0) 100%), rgba(159, 255, 114, 0.08);
+}
+
+#customizeBuy:hover {
+    box-shadow: 0px 0px 15px rgba(90, 255, 32, 0.05);
+}
+
+#customizeUpCancel:hover {
+    box-shadow: 0px 0px 15px rgba(219, 69, 49, 0.07);
+}
+
+.notifySectionXX {
+    z-index: 1489765;
+    display: none;
+    position: absolute;
+    /* height: 20%; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.notifyArea {
+    min-height: 4rem;
+    max-width: 30%;
+    margin: auto;
+    margin-top: 1rem;
+    background: radial-gradient(105.91% 105.91% at 50% 100%, rgba(255, 123, 123, 0.18) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 138, 138, 0.15);
+    border: 1px solid #ff8a8a;
+    box-shadow: 0px 0px 35px rgba(255, 138, 138, 0.42);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* line-height: 5rem; */
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-family: Acrom;
+    /* transition: opacity 0.4s; */
+}
+
+.succesfullyArea {
+    display: none;
+    z-index: 9876;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.succesNotify {
+    /* position: absolute; */
+    color: white;
+    font-family: Acrom;
+    font-size: 19px;
+    text-align: center;
+    padding: 1.5rem;
+    min-height: 4rem;
+    max-width: 25rem;
+    background: radial-gradient(105.91% 105.91% at 50% 100%, rgba(248, 202, 72, 0.33) 0%, rgba(0, 0, 0, 0) 100%), rgba(248, 202, 72, 0.18);
+    border: 1px solid rgba(248, 202, 72, 0.37);
+    box-shadow: 0px 0px 35px rgba(248, 202, 72, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1680px) and (max-height: 1050px) {
+    .categorieSection {
+        width: 71rem;
+    }
+    .charInfoSection {
+        margin-left: 74.5rem;
+    }
+    .generalMiddle {
+        height: 49.5rem;
+        width: 101rem;
+    }
+
+    .leftRedeemBox {
+        height: 800px;
+        width: 400px;
+    }
+    .blackLinear {
+        height: 800px;
+        width: 398px;
+    }
+    .upperMidCarBox {
+        height: 23.5rem;
+        width: 49.4rem;
+        margin-left: 27.4rem;
+        margin-top: -50rem;
+    }
+    .bottomMidGunBox {
+        height: 23.5rem;
+        width: 49.4rem;
+        margin-left: 27.4rem;
+        margin-top: -23.6rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 23rem;
+    }
+    .upperRightOtherBox {
+        width: 22.5rem;
+        height: 23.5rem;
+        margin-left: 79rem;
+        margin-top: -50rem;
+    }
+    .bottomRightMoneyBox {
+        width: 22.5rem;
+        height: 23.5rem;
+        margin-left: 79rem;
+        margin-top: 3rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .otherBoxButton {
+        margin-left: 6.7rem;
+    }
+    .otherBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxButton {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .redeemInfoArea {
+        margin-left: 4rem;
+    }
+    .writeTheCode {
+        margin-left: 4rem;
+    }
+    .approveButton {
+        margin-left: 7rem;
+    }
+    .rightCarListArea {
+        width: 75rem;
+        height: 51rem;
+        left: 425px;
+    }
+    .carListItem {
+        width: 360px;
+        height: 310px;
+    }
+    .listItemCarNameArea {
+        font-size: 19px;
+        width: 19rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        height: 11.5rem;
+        width: 17.5rem;
+        margin-top: 1rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        width: 6.3rem;
+        margin-left: 15rem;
+    }
+    .itemsMenuItemList {
+        height: 51rem;
+    }
+    .itemsMenuItem {
+        width: 375px;
+        height: 330px;
+    }
+    .itemMenuItemImageAreas {
+        height: 11.5rem;
+        width: 19.5rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 16px;
+        margin-top: 1.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 320px;
+        height: 343px;
+    }
+    .buyCreditSecondBox {
+        left: 400px;
+        width: 630px;
+        height: 343px;
+    }
+    .buyCreditThirdBox {
+        left: 1070px;
+        width: 585px;
+        height: 793px;
+    }
+    .buyCreditFourBox {
+        top: 595px;
+        width: 1000px;
+        height: 409px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 1024px) {
+    .categorieSection {
+        width: 66rem;
+    }
+    .charInfoSection {
+        margin-left: 69.5rem;
+    }
+    .generalMiddle {
+        height: 49.5rem;
+        width: 101rem;
+    }
+
+    .leftRedeemBox {
+        height: 790px;
+        width: 385px;
+    }
+    .blackLinear {
+        height: 790px;
+        width: 383px;
+    }
+    .upperMidCarBox {
+        height: 23.5rem;
+        width: 46.4rem;
+        margin-left: 26.5rem;
+        margin-top: -49.5rem;
+    }
+    .bottomMidGunBox {
+        height: 23.5rem;
+        width: 46.4rem;
+        margin-left: 26.5rem;
+        margin-top: -23.6rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 20rem;
+    }
+
+    .gunBoxInfoArea {
+        margin-left: 23.5rem;
+    }
+
+    .gunBoxDescription {
+        margin-left: 27rem;
+    }
+
+    .gunBoxButton {
+        margin-left: 29rem;
+    }
+
+    .gunButtonBelowText {
+        margin-left: 29.95rem;
+    }
+
+    .upperRightOtherBox {
+        width: 21.5rem;
+        height: 23.5rem;
+        margin-left: 75rem;
+        margin-top: -49.5rem;
+    }
+    .bottomRightMoneyBox {
+        width: 21.5rem;
+        height: 23.5rem;
+        margin-left: 75rem;
+        margin-top: 2.5rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .otherBoxButton {
+        margin-left: 6.7rem;
+    }
+    .otherBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxButton {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .redeemInfoArea {
+        margin-left: 4rem;
+    }
+    .writeTheCode {
+        margin-left: 4rem;
+    }
+    .approveButton {
+        margin-left: 7rem;
+    }
+
+    .leftSelectedCarDetailsArea {
+        height: 790px;
+    }
+
+    .rightCarListArea {
+        /* background-color: red; */
+        width: 70rem;
+        height: 49rem;
+        top: -785px;
+        left: 430px;
+    }
+    .carListItem {
+        width: 332px;
+        height: 310px;
+    }
+    .leftGraphArea {
+        margin-top: 1rem;
+    }
+    .leftItemCheckArea {
+        margin-top: 2rem;
+    }
+    .listItemCarNameArea {
+        font-size: 19px;
+        width: 18rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        /* background-color: red; */
+        height: 11.5rem;
+        width: 15.5rem;
+        margin-top: 1rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        width: 11rem;
+        /* background-color: red; */
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        /* background-color: blue; */
+        width: 6.3rem;
+        margin-left: 13rem;
+    }
+    .itemsMenuItemList {
+        height: 51rem;
+    }
+    .itemsMenuItem {
+        width: 357px;
+        height: 330px;
+    }
+    .itemMenuItemImageAreas {
+        /* background-color: red; */
+        height: 11.5rem;
+        width: 18.5rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 16px;
+        margin-top: 1.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 310px;
+        height: 335px;
+    }
+    .buyCreditSecondBox {
+        left: 380px;
+        width: 620px;
+        height: 335px;
+    }
+    .buyCreditThirdBox {
+        left: 1030px;
+        width: 545px;
+        height: 783px;
+    }
+    .thirdImageArea {
+        margin-left: 7rem;
+    }
+    .buyCreditFourBox {
+        top: 585px;
+        width: 970px;
+        height: 409px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+    .categorieSection {
+        width: 66rem;
+    }
+    .charInfoSection {
+        margin-left: 69.5rem;
+    }
+    .generalMiddle {
+        height: 49.5rem;
+        width: 101rem;
+    }
+
+    .leftRedeemBox {
+        height: 650px;
+        width: 385px;
+    }
+    .blackLinear {
+        height: 649px;
+        width: 383px;
+    }
+    .upperMidCarBox {
+        height: 19.5rem;
+        width: 46.4rem;
+        margin-left: 26.5rem;
+        margin-top: -40.5rem;
+    }
+    .bottomMidGunBox {
+        height: 19.5rem;
+        width: 46.4rem;
+        margin-left: 26.5rem;
+        margin-top: -19.6rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 20rem;
+    }
+
+    .gunBoxInfoArea {
+        margin-left: 23.5rem;
+    }
+
+    .gunBoxDescription {
+        margin-left: 27rem;
+    }
+
+    .gunBoxButton {
+        margin-left: 29rem;
+    }
+
+    .gunButtonBelowText {
+        margin-left: 29.95rem;
+    }
+
+    .upperRightOtherBox {
+        width: 21.5rem;
+        height: 19.5rem;
+        margin-left: 75rem;
+        margin-top: -40.5rem;
+    }
+    .bottomRightMoneyBox {
+        width: 21.5rem;
+        height: 19.5rem;
+        margin-left: 75rem;
+        margin-top: 1.35rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .otherBoxButton {
+        margin-left: 6.7rem;
+    }
+    .otherBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxButton {
+        margin-left: 6.7rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 4.5rem;
+    }
+    .redeemInfoArea {
+        margin-left: 4rem;
+        margin-top: 26.6rem;
+    }
+    .writeTheCode {
+        margin-left: 4rem;
+        margin-top: 29rem;
+    }
+    .approveButton {
+        margin-left: 7rem;
+        margin-top: 33.6rem;
+    }
+
+    .leftSelectedCarDetailsArea {
+        height: 650px;
+    }
+
+    .rightCarListArea {
+        /* background-color: red; */
+        width: 70rem;
+        height: 41rem;
+        top: -655px;
+        left: 430px;
+    }
+    .carListItem {
+        width: 332px;
+        height: 300px;
+    }
+    .leftGraphArea {
+        margin-top: 1rem;
+    }
+    .leftItemCheckArea {
+        margin-top: 2rem;
+    }
+    .leftCarNameArea {
+        margin-top: 1rem;
+    }
+    .leftCarImageArea {
+        /* background-color: red; */
+        width: 70%;
+        margin-left: 4.3rem;
+        margin-top: 1rem;
+        height: 9rem;
+    }
+    .listItemCarNameArea {
+        font-size: 19px;
+        width: 18rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        /* background-color: red; */
+        height: 10.5rem;
+        width: 15.5rem;
+        margin-top: 1rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        width: 11rem;
+        /* background-color: red; */
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        /* background-color: blue; */
+        width: 6.3rem;
+        margin-left: 13rem;
+    }
+    .itemsMenuItemList {
+        height: 41rem;
+        /* background-color: red; */
+    }
+    .itemsMenuItem {
+        width: 357px;
+        height: 330px;
+    }
+    .itemMenuItemImageAreas {
+        /* background-color: red; */
+        height: 11.5rem;
+        width: 18.5rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 16px;
+        margin-top: 1.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 310px;
+        height: 315px;
+    }
+    .buyCreditSecondBox {
+        left: 380px;
+        width: 620px;
+        height: 315px;
+    }
+    .buyCreditThirdBox {
+        left: 1030px;
+        width: 545px;
+        height: 665px;
+    }
+    .thirdImageArea {
+        margin-top: 4.5rem;
+        top: 620px;
+    }
+    .buyCreditFourBox {
+        top: 555px;
+        width: 970px;
+        height: 319px;
+        border-radius: 10px;
+    }
+    .fourBoxImageArea {
+        margin-top: 3.5rem;
+    }
+    .secondBoxImageArea {
+        margin-top: 3rem;
+    }
+    .firstBoxImageArea {
+        margin-top: 1.5rem;
+    }
+    .firstBoxPrice {
+        margin-top: 1.5rem;
+    }
+    .secondBoxGetCredit {
+        margin-top: 12rem;
+    }
+
+    .secondBoxExtraCredit {
+        margin-top: 13.5rem;
+    }
+
+    .fourBoxPrice {
+        margin-top: 6rem;
+    }
+
+    .fourBoxGetCredit {
+        position: absolute;
+        /* background-color: red; */
+        margin-left: 47.2rem;
+        margin-top: 11rem;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        color: white;
+    }
+
+    .fourBoxExtraCredit {
+        margin-top: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    .categorieSection {
+        width: 56rem;
+    }
+    .charInfoSection {
+        margin-left: 59.5rem;
+    }
+    .generalMiddle {
+        height: 49.5rem;
+        width: 101rem;
+    }
+
+    .leftRedeemBox {
+        height: 650px;
+        width: 345px;
+    }
+    .blackLinear {
+        height: 649px;
+        width: 343px;
+    }
+    .upperMidCarBox {
+        height: 19.5rem;
+        width: 41.4rem;
+        margin-left: 23.5rem;
+        margin-top: -40.5rem;
+    }
+    .bottomMidGunBox {
+        height: 19.5rem;
+        width: 41.4rem;
+        margin-left: 23.5rem;
+        margin-top: -19.6rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 16rem;
+    }
+
+    .gunBoxInfoArea {
+        margin-left: 17rem;
+    }
+
+    .gunBoxDescription {
+        margin-left: 20rem;
+    }
+
+    .gunBoxButton {
+        margin-left: 22rem;
+    }
+
+    .gunButtonBelowText {
+        margin-left: 22.95rem;
+    }
+
+    .upperRightOtherBox {
+        width: 19.9rem;
+        height: 19.5rem;
+        margin-left: 66.5rem;
+        margin-top: -40.5rem;
+    }
+    .bottomRightMoneyBox {
+        width: 19.9rem;
+        height: 19.5rem;
+        margin-left: 66.5rem;
+        margin-top: 1.35rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: 5.2rem;
+    }
+    .otherBoxButton {
+        margin-left: 5.2rem;
+    }
+    .otherBoxDescription {
+        margin-left: 3rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 5.2rem;
+    }
+    .moneyBoxButton {
+        margin-left: 5.2rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 3rem;
+    }
+    .redeemInfoArea {
+        margin-left: 2rem;
+        margin-top: 26.6rem;
+    }
+    .writeTheCode {
+        margin-left: 2rem;
+        margin-top: 29rem;
+    }
+    .approveButton {
+        margin-left: 5rem;
+        margin-top: 33.6rem;
+    }
+
+    .leftSelectedCarDetailsArea {
+        height: 650px;
+    }
+
+    .rightCarListArea {
+        /* background-color: red; */
+        width: 60rem;
+        height: 41rem;
+        top: -655px;
+        left: 430px;
+    }
+    .carListItem {
+        width: 280px;
+        height: 270px;
+    }
+    .leftGraphArea {
+        margin-top: 1rem;
+    }
+    .leftItemCheckArea {
+        margin-top: 2rem;
+    }
+    .leftCarNameArea {
+        margin-top: 1rem;
+    }
+    .leftCarImageArea {
+        /* background-color: red; */
+        width: 70%;
+        margin-left: 4.3rem;
+        margin-top: 1rem;
+        height: 9rem;
+    }
+    .listItemCarNameArea {
+        font-size: 16px;
+        width: 15rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        /* background-color: red; */
+        height: 9rem;
+        width: 12rem;
+        margin-top: 1rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        width: 9rem;
+        /* background-color: red; */
+        font-size: 15px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        /* background-color: blue; */
+        width: 6.3rem;
+        font-size: 14px;
+        margin-left: 10rem;
+    }
+    .itemsMenuItemList {
+        height: 41rem;
+        /* background-color: red; */
+    }
+    .itemsMenuItem {
+        width: 317px;
+        height: 310px;
+    }
+    .itemMenuItemImageAreas {
+        /* background-color: red; */
+        height: 10.5rem;
+        width: 16.5rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 16px;
+        margin-top: 1.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 310px;
+        height: 315px;
+    }
+    .buyCreditSecondBox {
+        left: 380px;
+        width: 620px;
+        height: 315px;
+    }
+    .buyCreditThirdBox {
+        left: 1030px;
+        width: 385px;
+        height: 665px;
+    }
+    .thirdImageArea {
+        margin-top: 4.5rem;
+        top: 620px;
+        margin-left: 5rem;
+    }
+    .buyCreditFourBox {
+        top: 555px;
+        width: 970px;
+        height: 319px;
+        border-radius: 10px;
+    }
+    .fourBoxImageArea {
+        margin-top: 3.5rem;
+    }
+    .secondBoxImageArea {
+        margin-top: 3rem;
+    }
+    .firstBoxImageArea {
+        margin-top: 1.5rem;
+    }
+    .firstBoxPrice {
+        margin-top: 1.5rem;
+    }
+    .secondBoxGetCredit {
+        margin-top: 12rem;
+    }
+
+    .secondBoxExtraCredit {
+        margin-top: 13.5rem;
+    }
+
+    .fourBoxPrice {
+        margin-top: 6rem;
+    }
+
+    .fourBoxGetCredit {
+        position: absolute;
+        /* background-color: red; */
+        margin-left: 47.2rem;
+        margin-top: 11rem;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        color: white;
+    }
+
+    .fourBoxExtraCredit {
+        margin-top: 12.5rem;
+    }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) {
+    .categorieSection {
+        width: 120rem;
+        /* background-color: red; */
+    }
+    .redeemCodeTextArea {
+        font-size: 55px;
+    }
+
+    .secondBoxPrice {
+        margin-top: 8.5rem;
+    }
+
+    .redeemCodeDescArea {
+        font-size: 17px;
+        margin-top: 6.300000000000001rem;
+    }
+
+    .redeemInfoArea {
+        font-size: 15px;
+    }
+
+    .writeTheCode {
+        width: 300px;
+    }
+
+    .charInfoSection {
+        margin-left: 125.5rem;
+    }
+    .generalMiddle {
+        height: 75.5rem;
+        width: 152.5rem;
+        /* background-color: red; */
+    }
+
+    .leftRedeemBox {
+        height: 1150px;
+        width: 550px;
+    }
+    .blackLinear {
+        height: 1149px;
+        width: 548px;
+    }
+    .upperMidCarBox {
+        height: 33.5rem;
+        width: 75.4rem;
+        margin-left: 38.5rem;
+        margin-top: -72rem;
+    }
+    .bottomMidGunBox {
+        height: 34.5rem;
+        width: 75.4rem;
+        margin-left: 38.5rem;
+        margin-top: -34.6rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 41rem;
+    }
+
+    .topRectangle {
+        width: 128.5rem;
+    }
+
+    .gunBoxInfoArea {
+        margin-left: 42rem;
+    }
+
+    .gunBoxDescription {
+        margin-left: 46rem;
+    }
+
+    .gunBoxButton {
+        margin-left: 48rem;
+    }
+
+    .gunButtonBelowText {
+        margin-left: 48.95rem;
+    }
+
+    .upperRightOtherBox {
+        width: 34.1rem;
+        height: 33.4rem;
+        margin-left: 118.5rem;
+        margin-top: -72rem;
+    }
+    .bottomRightMoneyBox {
+        width: 34.1rem;
+        height: 34rem;
+        margin-left: 118.5rem;
+        margin-top: 4.35rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: 13.2rem;
+    }
+    .otherBoxButton {
+        margin-left: 13.2rem;
+    }
+    .otherBoxDescription {
+        margin-left: 11rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 13.2rem;
+    }
+    .moneyBoxButton {
+        margin-left: 13.2rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 11rem;
+    }
+    .redeemInfoArea {
+        margin-left: 12rem;
+        margin-top: 49.6rem;
+    }
+    .writeTheCode {
+        margin-left: 10rem;
+        margin-top: 52rem;
+    }
+    .approveButton {
+        margin-left: 13.5rem;
+        margin-top: 56.6rem;
+    }
+
+    .leftSelectedCarDetailsArea {
+        height: 1187px;
+    }
+
+    .rightCarListArea {
+        /* background-color: red; */
+        width: 128rem;
+        height: 74rem;
+        top: -1187px;
+        left: 430px;
+    }
+    .carListItem {
+        width: 364px;
+        height: 359px;
+    }
+    .leftGraphArea {
+        margin-top: 15rem;
+    }
+    .leftItemCheckArea {
+        margin-top: 9rem;
+    }
+    .leftCarNameArea {
+        margin-top: 1rem;
+    }
+    .leftCarImageArea {
+        /* background-color: red; */
+        width: 70%;
+        margin-left: 4.3rem;
+        margin-top: 13rem;
+        height: 9rem;
+    }
+    .listItemCarNameArea {
+        font-size: 16px;
+        width: 15rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        /* background-color: red; */
+        height: 13rem;
+        width: 18rem;
+        margin-top: 1rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        width: 9rem;
+        /* background-color: red; */
+        font-size: 15px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        /* background-color: blue; */
+        width: 6.3rem;
+        font-size: 14px;
+        margin-left: 13rem;
+    }
+    .itemsMenuItemList {
+        height: 73rem;
+        /* background-color: red; */
+    }
+    .itemsMenuItem {
+        /* width: 375px; */
+        /* height: 354px; */
+        width: 441.5px;
+        height: 388px;
+    }
+    .itemMenuItemImageAreas {
+        /* background-color: red; */
+        height: 10.5rem;
+        width: 16.5rem;
+        margin-left: 6rem;
+        margin-top: 2.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 16px;
+        margin-top: 3.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 510px;
+        height: 465px;
+    }
+    .buyCreditSecondBox {
+        left: 580px;
+        width: 1220px;
+        height: 465px;
+    }
+    .buyCreditThirdBox {
+        left: 1830px;
+        width: 640px;
+        height: 1165px;
+    }
+    .thirdImageArea {
+        margin-top: 24.5rem;
+        top: 620px;
+        margin-left: 9rem;
+    }
+    .buyCreditFourBox {
+        top: 720px;
+        width: 1770px;
+        height: 655px;
+        border-radius: 10px;
+    }
+    .fourBoxImageArea {
+        margin-top: 13.5rem;
+    }
+    .secondBoxImageArea {
+        margin-top: 7rem;
+    }
+    .firstBoxImageArea {
+        margin-top: 4.5rem;
+    }
+    .firstBoxPrice {
+        margin-top: 5.5rem;
+    }
+    .secondBoxGetCredit {
+        margin-top: 20rem;
+    }
+
+    .secondBoxExtraCredit {
+        margin-top: 18.5rem;
+    }
+
+    .fourBoxPrice {
+        margin-top: 15rem;
+    }
+
+    .fourBoxGetCredit {
+        position: absolute;
+        /* background-color: red; */
+        margin-left: 47.2rem;
+        margin-top: 23rem;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        color: white;
+    }
+
+    .fourBoxExtraCredit {
+        margin-top: 24.5rem;
+    }
+}
+
+@media screen and (width: 3840px) and (height: 2160px) {
+    .categorieSection {
+        width: 200rem;
+        /* background-color: red; */
+    }
+    .charInfoSection {
+        margin-left: 184.5rem;
+        width: 48rem;
+    }
+    .generalMiddle {
+        height: 115.5rem;
+        width: 232.5rem;
+        /* background-color: red; */
+    }
+
+    .leftRedeemBox {
+        height: 1850px;
+        width: 850px;
+    }
+    .blackLinear {
+        height: 1849px;
+        width: 848px;
+    }
+    .upperMidCarBox {
+        height: 54.5rem;
+        width: 120.4rem;
+        margin-left: 58.5rem;
+        margin-top: -115.6rem;
+    }
+    .bottomMidGunBox {
+        height: 54.5rem;
+        width: 120.4rem;
+        margin-left: 58.5rem;
+        margin-top: -55.1rem;
+    }
+    .gunBoxTitleArea {
+        margin-left: 66rem;
+        margin-top: 8rem;
+        font-size: 65px;
+        width: 60rem;
+    }
+
+    .topRectangle {
+        width: 213.5rem;
+    }
+
+    .gunBoxInfoArea {
+        margin-left: 65rem;
+        font-size: 25px;
+        width: 50rem;
+    }
+
+    .gunBoxDescription {
+        margin-left: 65rem;
+        margin-top: 13rem;
+        font-size: 30px;
+        width: 50rem;
+    }
+
+    .gunBoxButton {
+        margin-left: 83rem;
+    }
+
+    .gunButtonBelowText {
+        margin-left: 71.95rem;
+        margin-top: 31rem;
+        font-size: 30px;
+        width: 30rem;
+    }
+
+    .upperRightOtherBox {
+        width: 48.1rem;
+        height: 54.4rem;
+        margin-left: 184.5rem;
+        margin-top: -115.6rem;
+    }
+    .bottomRightMoneyBox {
+        width: 48.1rem;
+        height: 54rem;
+        margin-left: 184.5rem;
+        margin-top: 6.35rem;
+    }
+    .otherBoxInfoArea {
+        margin-left: -0.7999999999999972rem;
+        font-size: 25px;
+        width: 50rem;
+    }
+    .otherBoxButton {
+        margin-left: 17.2rem;
+        font-size: 40px;
+        height: 4rem;
+        margin-top: 6rem;
+        line-height: 4rem;
+        width: 14rem;
+    }
+    .otherBoxDescription {
+        margin-top: 11rem;
+        margin-left: 9rem;
+        font-size: 23px;
+        width: 30rem;
+    }
+    .moneyBoxInfoArea {
+        margin-left: 3.1999999999999993rem;
+        font-size: 25px;
+        width: 40rem;
+    }
+    .moneyBoxButton {
+        margin-left: 17.2rem;
+        font-size: 40px;
+        width: 14rem;
+        height: 4rem;
+        margin-top: 6rem;
+        line-height: 4rem;
+    }
+    .moneyBoxDescription {
+        margin-left: 9rem;
+        margin-top: 11rem;
+        font-size: 25px;
+        width: 30rem;
+    }
+    .redeemInfoArea {
+        margin-left: 12rem;
+        width: 29rem;
+        margin-top: 78.6rem;
+        font-size: 22px;
+        /* background: red; */
+    }
+    .writeTheCode {
+        margin-left: 18rem;
+        margin-top: 82rem;
+        width: 20rem;
+        height: 5rem;
+        font-size: 22px;
+    }
+    .approveButton {
+        margin-left: 18rem;
+        margin-top: 88.6rem;
+        width: 20rem;
+        /* height: 7rem; */
+        font-size: 30px;
+        /* padding: 3rem; */
+    }
+
+    .leftSelectedCarDetailsArea {
+        height: 1908px;
+        width: 28rem;
+    }
+
+    .rightCarListArea {
+        /* background-color: red; */
+        width: 206rem;
+        height: 119rem;
+        top: -1906px;
+        left: 473px;
+    }
+    .carListItem {
+        width: 614px;
+        height: 557px;
+    }
+    .leftGraphArea {
+        margin-top: 26rem;
+    }
+    .leftItemCheckArea {
+        margin-top: 34rem;
+    }
+    .leftCarNameArea {
+        margin-top: 1rem;
+        font-size: 35px;
+    }
+    .leftCarImageArea {
+        /* background-color: red; */
+        width: 70%;
+        margin-left: 4.3rem;
+        margin-top: 21rem;
+        height: 9rem;
+    }
+    .listItemCarNameArea {
+        font-size: 40px;
+        width: 15rem;
+        height: 2rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .listItemCarImageArea {
+        /* background-color: red; */
+        height: 23rem;
+        width: 33rem;
+        margin-top: 3rem;
+        margin-left: 2.7rem;
+    }
+    .listItemCreditArea {
+        width: 9rem;
+        /* background-color: red; */
+        font-size: 27px;
+        margin-left: 2rem;
+    }
+    .listItemMaxSpeedArea {
+        /* background-color: blue; */
+        width: 6.3rem;
+        font-size: 27px;
+        margin-left: 27rem;
+    }
+    .itemsMenuItemList {
+        height: 119rem;
+        /* background-color: red; */
+    }
+    .itemsMenuItem {
+        width: 683px;
+        height: 598px;
+    }
+    .itemMenuItemImageAreas {
+        /* background-color: red; */
+        height: 26.5rem;
+        width: 38.5rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+    .itemMenuItemCreditArea {
+        font-size: 36px;
+        margin-top: 1.8rem;
+    }
+    .buyCreditFirstBox {
+        width: 846px;
+        height: 787px;
+    }
+    .buyCreditSecondBox {
+        left: 902px;
+        width: 1533px;
+        height: 790px;
+    }
+    .buyCreditThirdBox {
+        left: 2475px;
+        width: 1276px;
+        height: 1849px;
+    }
+    .thirdImageArea {
+        margin-top: 55.5rem;
+        top: 639px;
+        margin-left: 16rem;
+    }
+    .buyCreditFourBox {
+        top: 1019px;
+        width: 2401px;
+        height: 1043px;
+        border-radius: 10px;
+    }
+    .fourBoxImageArea {
+        margin-top: 24.5rem;
+    }
+    .secondBoxImageArea {
+        margin-top: 19rem;
+    }
+    .firstBoxImageArea {
+        margin-top: 3.5rem;
+        margin-left: 5rem;
+    }
+    .firstBoxPrice {
+        margin-top: 15.5rem;
+    }
+    .secondBoxGetCredit {
+        margin-top: 34rem;
+    }
+
+    .secondBoxExtraCredit {
+        margin-top: 36.5rem;
+    }
+
+    .fourBoxPrice {
+        margin-top: 27rem;
+    }
+
+    .fourBoxGetCredit {
+        position: absolute;
+        /* background-color: red; */
+        margin-left: 47.2rem;
+        margin-top: 37rem;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        color: white;
+    }
+
+    .fourBoxExtraCredit {
+        margin-top: 39.5rem;
+    }
+    .leftItemCheckArea label {
+        margin-left: 1rem;
+        font-size: 17px;
+        margin-top: -1rem;
+    }
+    .itemMaxSpeedText {
+        font-size: 27px;
+    }
+
+    .itemMenuItemNameArea {
+        font-size: 40px;
+    }
+
+    .carBoxInfoArea {
+        font-size: 20px;
+        width: 51rem;
+    }
+
+    .carBoxTitleArea {
+        font-size: 65px;
+        width: 65rem;
+    }
+
+    .carBoxDescription {
+        font-size: 35px;
+        width: 50rem;
+        margin-top: 11rem;
+        margin-left: 1rem;
+    }
+    .carBoxButton {
+        z-index: 987;
+        /* background-color: red; */
+        position: absolute;
+        margin-top: 20rem;
+        margin-left: 12rem;
+        width: 310px;
+        height: 86px;
+        text-align: center;
+        line-height: 90px;
+        color: #d1d1d1;
+        font-family: Inter;
+        font-size: 40px;
+        border: 1.34286px solid #ba6ff5;
+        box-shadow: 0px 0px 13px #7197ff31;
+        border-radius: 6.71429px;
+        cursor: pointer;
+    }
+    .carButtonBelowText {
+        position: absolute;
+        margin-top: 26.3rem;
+        margin-left: 11.95rem;
+        font-family: Zabal Bold;
+        font-size: 20px;
+        color: #696969;
+        /* background-color: red; */
+        width: 20rem;
+        text-align: center;
+    }
+    .gunBoxButton {
+        z-index: 987;
+        /* background-color: red; */
+        position: absolute;
+        margin-top: 24rem;
+        margin-left: 78rem;
+        width: 311px;
+        height: 85px;
+        text-align: center;
+        line-height: 90px;
+        font-size: 40px;
+        color: #d1d1d1;
+        font-family: Inter;
+        border: 1px solid #7198ff;
+        box-shadow: 0px 0px 13px #7197ff61;
+        border-radius: 6.71429px;
+        cursor: pointer;
+    }
+    .categorieItem {
+        color: rgba(255, 255, 255, 0.51);
+        font-family: Acrom;
+        /* background-color: red; */
+        min-width: 246px;
+        font-size: 25px;
+        margin-top: 0.25rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(0deg, rgba(61, 32, 32, 0.9), rgba(71, 43, 43, 0.6)) padding-box,
+            linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(61, 32, 32, 0.6)) border-box;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .categorieItemList {
+        /* background-color: rgba(255, 0, 0, 0.124); */
+        display: flex;
+        height: 5rem;
+        width: 180rem;
+        /* margin-bottom: 1rem; */
+        margin-left: 2rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .charNameSection {
+        display: flex;
+        /* background-color: red; */
+        width: 15.5rem;
+        overflow: hidden;
+        font-size: 25px;
+    }
+    .charSurName {
+        line-height: 4.9rem;
+        margin-left: 0.25rem;
+        font-family: Zabal;
+        font-size: 34px;
+        color: rgba(255, 255, 255, 0.72);
+    }
+    .charName {
+        line-height: 5rem;
+        margin-left: 0.5rem;
+        font-family: Acrom;
+        font-size: 34px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .profileCreditSection {
+        margin-left: 0.5rem;
+        display: flex;
+        line-height: 5rem;
+        color: #ffffff;
+        font-family: Inter;
+        font-size: 33px;
+        width: 14.5rem;
+    }
+
+    .buyCreditButton {
+        cursor: pointer;
+        margin-left: 2rem;
+        background: #f8ca48;
+        border-radius: 3px;
+        height: 46px;
+        line-height: 46px;
+        width: 11rem;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.789);
+        font-family: Zabal Bold;
+    }
+    .mainMenuButton {
+        background: linear-gradient(0deg, rgba(56, 49, 31, 0.9), rgba(56, 56, 10, 0.12)) padding-box,
+            linear-gradient(to top, rgba(255, 239, 93, 0.494), rgba(56, 49, 31, 0.9)) border-box;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}

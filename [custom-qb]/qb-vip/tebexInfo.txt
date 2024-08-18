@@ -1,0 +1,14 @@
+
+-- In Tebex, go to the package you would like to add
+
+-- Add a game server command to your server of choice
+
+-- Set the command When the package is purchased
+
+-- Add          purchase_donate_credit {"transid": "{transaction}", "credit": "credit amount"}       as the command
+
+-- EXAMPLE : purchase_donate_credit {"transid": "{transaction}", "credit": "1000"} -- gives the user 1000 credits when the code is used
+
+-- Press the settings icon on the right and change the command to Execute the command even if the player is offline
+
+-- Press Update

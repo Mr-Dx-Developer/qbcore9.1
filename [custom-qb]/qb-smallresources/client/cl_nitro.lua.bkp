@@ -1,0 +1,12 @@
+local QBCore = exports["qb-core"]:GetCoreObject()
+
+RegisterNetEvent('qb-smallresources:client:VehicleSpawn', function(netId)
+    local veh = NetToVeh(netId)
+
+    -- Do something with the spawned vehicle, such as storing a reference to it
+    exports['qb-fuel']:SetFuel(veh, 100.0)
+    SetVehicleEngineOn(veh, false, true)
+    SetVehicleNumberPlateText(veh, "NITRO" .. tostring(math.random(10, 99)))
+    TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
+    print("client side connected with nitro script")
+end)

@@ -1,0 +1,1626 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.bg-button { background: #646475!important; }
+.text-check { color: rgba(255, 255, 255, 0.8)!important; }
+.text-checkbox { color: #0fffd5!important; }
+.q-checkbox__svg { color: #000!important; }
+div#q-loading-bar { display: none!important; }
+::-webkit-scrollbar { display: none!important; }
+.q-card { background: rgb(35, 34, 56)!important; }
+p { margin: 0 !important; }
+.q-btn { align-items: center!important; }
+.text-h6 { color: #fff; }
+.q-card__section.q-card__section--vert.q-pt-none { color: #fff; }
+
+@media screen and (min-width: 2540px) {
+    #itembox-label {
+        min-height: 1.8vh;
+    } 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+:root {
+    --main-label-color: 38, 41, 60;
+}
+
+.fas.fa-lock {
+    font-size: 22px;
+    top: -82px;
+    right: 0px;
+    position: relative;
+}
+
+.brand-logo {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 3px;
+    padding-bottom: 10px;
+    width: 45%;
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    text-transform: normal;
+    font-size: 1.5vh;
+     font-family: 'Oswald', sans-serif;
+  }
+
+/* rgb() */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+ 
+#progressbar {
+    width: 73.6%;
+    margin-left: 31.8%;
+    margin-top: -2.3%;
+    background-color: rgb(39 39 49);
+}
+
+#progressbar-other {
+    width: 97.8%;
+    margin-left: 31.5%;
+    margin-top: 32.3%;
+    background-color: rgb(39 39 49);
+}
+
+.pro {
+    background: linear-gradient(to right, #0fffd5, #0b9a82 500px);
+    height: 8px;
+    max-width: 100%;
+    transition: width 1s, background-color 1s;
+}
+
+.pro1 {
+    background: linear-gradient(to right, #0fffd5, #0b9a82 500px);
+    height: 10px;
+    max-width: 100%;
+    transition: width 1s, background-color 1s;
+}
+
+.weight-img {
+    margin-top: 0.6%;
+    width: 4%;
+    right: -14%;
+    position: absolute;
+}
+
+.weight-img-other {
+    margin-top: 0.6%;
+    width:4%;
+    right: -12%;
+    position:absolute;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#qbcore-inventory {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0vw;
+    display: none;
+    user-select: none;
+}
+
+.inv-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+/*     background: radial-gradient(circle, rgba(24, 80, 54, 0.93) 10%, black 80%); */
+     background: radial-gradient(circle, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 80%);
+    top: 0;  
+    left: 0;
+    z-index: -1;
+}
+
+.inv-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.player-inventory-bg {
+    position: absolute;
+    float: left ;
+    top: 25%;
+    left: 2.2%;
+    width: 41%;
+    max-width: 41%;
+    height: 58.5%;
+    max-height: 81%;
+}
+
+.player-inventory {
+    position: absolute;
+    top: 8%;
+    left: 2.35%;
+    width: 96.22%;
+    max-width: 102.22%;
+    height: 95%;
+    max-height: 132%;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+
+.other-inventory-bg {
+    position: absolute; 
+    top: 24%;
+    float: right;
+    right: 2.2%;
+    margin: 0 auto;
+     width: 41%;
+    max-width: 41%;
+    height: 58.5%;
+    max-height: 81%;
+}
+
+.other-inventory {
+    position: absolute;
+    top: 9.6%;
+    right: 2.5%;
+     width: 96.22%;
+    max-width: 102.22%;
+    height: 94%;
+    max-height: 132%;
+    float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.ply-hotbar-inventory {
+    position: absolute;
+    bottom: 10%;
+    left: 35.5%;
+    z-index: 105;
+}
+
+.cloth-items{
+    position: absolute;
+    top:20vh;
+    right:15vw;
+}
+.item-box {
+    display: inline-flex;
+    width: 8vh;
+    height: 8vh;
+    border-left: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-bottom: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-top: 0.1vh solid rgba(169, 169, 169,0.6);
+    transform: rotate(-90deg);
+    margin-top:1vh;
+    margin-right:0.5vw;
+    justify-content: center;
+    place-items: center;
+}
+.item-box:before{
+    content: "";
+    height: 20%;
+    position: absolute;
+    right: 0;
+    border-right: 0.1vh solid rgba(169, 169, 169,0.6);
+}
+.item-box:after {
+    content: "";
+    height: 20%;
+    position: absolute;
+
+    right: 0;
+    top:0;
+    border-right: 0.1vh solid rgba(169, 169, 169,0.6);
+}
+.item-box *{
+  transform: rotate(90deg);
+}
+.item-box:before {
+    bottom: 0;
+    height: 50%;
+}
+.item-box img{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    /*filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);*/
+}
+.item-amount{
+    position: absolute;
+    right:-0.9vh;
+    font-size: 1.4vh;
+    width: 2.3vh;
+    height: 2vh;
+    overflow:hidden;
+}
+
+.cloth-items *{
+    display: flex;
+    color: white;
+}
+.cloth-items .item-box:hover{
+    opacity: 0.2;
+}
+.cloth-items img{
+    width: 40%;
+    height: 40%;
+    right: 1vh;
+}
+.cloth-items .item-box:nth-child(9){
+    position: absolute;
+    right:-10vh;
+    bottom:0vh;
+}  
+.cloth-items > .item-box > span{
+    position: relative; 
+    right:1.9vh;
+    font-size: 1.8vh 
+}
+
+.clothswitch {
+	position: absolute;
+	left: 49.05vw;
+	top: 75%;
+	z-index: 10 
+}
+
+.player-inventory > .item-slot > .item-slot-key > p {
+    position: absolute;
+    font-weight: 400;
+    color: whitesmoke;
+    padding-top: 4vh;
+    padding-bottom: 0px;
+    padding-left: 3.95vh;
+    text-align: left;
+    font-size: 4vh;
+    line-height: 1.8vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.inv-options {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    height: auto; 
+    margin: 16% auto; 
+    right: 0px;
+    width: 11%;
+    left: 3vh;
+    cursor: pointer; /* Can also be 'none' however, as these are the buttons I feel as the pointer fits better */
+}
+
+.combine-option-container {
+    display: none;
+    position: relative;
+    right: 0px;
+    width: auto;
+    left: 0vh;
+    margin: 0px auto;
+}
+
+.item-slot {
+    position: relative;
+    width: 10.5vh;
+    height: 10vh;
+    float: left;
+    border-left: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-bottom: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-right: 0.1vh solid rgba(169, 169, 169,0.6);
+/*     background-color: rgb(102 102 113 / 30%) !important; */
+    margin-top:1vh;
+    margin-right:0.5vw;
+    transition: opacity 0.2s ease 0s;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15), #00000000);;
+}
+
+
+.item-slot::before {
+  content: "";
+  position: absolute;
+
+  width: 10%;
+  height: 1px;
+
+  top: 0;
+  left: -1px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.item-slot::after {
+  content: "";
+  position: absolute;
+
+  width: 60%;
+  height: 1px;
+
+  top: 0;
+  left: calc(100% + 1px); 
+
+  transform: translateX(-100%);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.item-slot:hover {
+  border-color: deepskyblue;
+}
+
+.item-slot:hover::after {
+  background-color: deepskyblue;
+}
+
+.item-slot:hover::before {
+  background-color: deepskyblue;
+}
+ 
+.inv-option-item {
+    margin-top: 10%;
+}
+
+.btn-inv {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding: 10%!important;
+   
+}
+
+#item-amount {
+    color: white;
+    text-align: center;
+    font-size: 1.5vh;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+}
+
+.ammo-info-block {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 22vh;
+    height: 11vh;
+    background-color: rgba(235, 235, 235, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    top: 2vh;
+}
+.ammo-info-header { 
+    /* background-color: rgba(5, 5, 5, 0.5); */
+    width: 100%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.192);
+    font-size: 1.vh;
+    padding: .4vh;
+    text-align: center;
+}
+.ammo-info {
+    position: relative;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.vh;
+    margin-left: .8vh;
+    margin-top: .4vh;
+    margin-bottom: .25vh;
+    top: .6vh;
+}
+.ammo-info span {
+    margin-right: 1vh;
+    float: right;
+}
+
+.inv-option-item > p {
+    position: absolute;
+    left: 46vw;
+    bottom: 20.4vh;
+    background: transparent;
+    z-index: 1;
+    font-weight: 100;
+    border: 0.2vh solid whitesmoke;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+  line-height: 3vh;
+    color: white;  
+    width: 13vh;
+    height: 3.5vh;
+    text-align: center;
+}
+
+.inv-option-item {
+    margin-top: 3%;
+    width: 100%;
+    height: 50px;
+    margin-left: 0%;
+    background-color:  transparent !important;
+    border: none;
+    color: white;
+    transition: background-color .1s linear; 
+    border-radius: 0px!important;
+}
+
+.inv-option-use {
+     position: relative;
+    float: left;
+    padding: 5px;
+    margin-top: 230px;
+    margin-left: 44px;
+    height: 100px;
+    width: 100px;
+    transition: all .3s linear;
+    background-color: #ff0039;
+    color: rgb(252, 1, 56);
+    box-shadow: 0 0 10px 5px black;
+    rotate: 45deg;
+    border-radius: 16px;
+}
+
+.inv-option-use > p {
+    font-size: 35px;
+    line-height: 4.vh;
+    transform: rotate(-45deg);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 550;
+    color: white;  
+    padding: 15;
+}
+
+.inv-option-use:hover {
+ box-shadow: 0 0 10px 1px whitesmoke;
+  background-color: black;
+}
+
+.inv-option-give {
+     position: relative;
+    float: left;
+    padding: 5px;
+    margin-top: -190px;
+    margin-left: 1px;
+    height: 80px;
+    width: 80px;
+    transition: all .3s linear;
+    background-color: white;
+    color: rgb(35 34 56 / 70%);
+    rotate: 45deg;
+    border-radius: 16px;
+}
+
+.inv-option-give > p {
+    font-size: 25px;
+    line-height: 3vh;
+    transform: rotate(-45deg);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 850;
+    color: black;
+    padding: 13;
+}
+
+.inv-option-give:hover {
+ box-shadow: 0 0 10px 1px whitesmoke;
+}
+
+.inv-option-close {
+     position: relative;
+    float: left;
+    padding: 5px;
+    margin-top: 18px;
+    margin-left: 99px;
+    height: 80px;
+    width: 80px;
+    transition: all .3s linear;
+    background-color: white;
+    color: rgb(252, 1, 56) ;
+    rotate: 45deg;
+    border-radius: 16px;
+}
+
+.inv-option-close > p {
+    font-size: 25px;
+    line-height: 3.8vh;
+    transform: rotate(-45deg);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    color: black;
+    padding: 10;
+}
+
+
+
+.inv-option-close:hover {
+ box-shadow: 0 0 10px 1px whitesmoke;
+}
+
+
+.inv-option-amount {
+    margin-top: -20%;
+    width: 80%;
+    height: 40px;
+    margin-left: -12%;
+    background-color: #646475 !important;
+    border: none; 
+    color: white;
+    transition: background-color .1s linear;
+    border-radius: 0px!important; 
+}  
+.inv-option-hand {
+    margin-top: 20%; 
+     width: 80%; 
+    height: 100px;
+    margin-left: 10%;
+    transition: background-color .1s linear;
+}
+
+.amount {
+    position: absolute;
+    left: 34vw;
+    top: 26.4vh;
+    background: transparent;
+    z-index: 1;
+    font-weight: 500;
+    border: 0.1vh solid rgba(169, 169, 169,0.6);
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    color: white;  
+    width: 13vh;
+    height: 3.5vh;
+    text-align: center;
+}
+
+.use-item{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 8vh;
+    left: 2vh;
+    border:1px solid red;
+    display: inline-flex;
+    justify-content: center;
+    place-items: center;
+    border: none;
+    background: white;
+    backdrop-filter: blur(1vh);
+    font-size:2vh;
+}
+.use-item-text i {
+    transform: rotate(0deg);
+    margin-right: 0.3vw;
+    top: -0.4vh;
+    position: relative;
+}
+
+.btn-combine {
+  position: relative;
+    float: left;
+    padding: 1px;
+    margin-top: 25px;
+    margin-left: 108px;
+    height: 80px;
+    width: 80px;
+    top: -315px;
+    transition: all .3s linear;
+    background-color: darkgoldenrod;
+    color: rgb(252, 1, 56) ;
+    rotate: 45deg;
+    border-radius: 16px;
+}
+
+.btn-combine > p {
+      font-size: 25px;
+    line-height: 5.9vh;
+    transform: rotate(-45deg);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 850;
+    color: black;
+    padding: 2; 
+ 
+}
+
+.btn-combine2 { 
+  position: relative;
+    float: left;
+    padding: 1px; 
+    margin-top: 25px;
+    margin-left: -5px;
+    height: 80px;
+    width: 80px;
+    top: -210px;
+    transition: all .3s linear;
+    background-color: darkgoldenrod;
+    color: rgb(252, 1, 56) ;
+    rotate: 45deg;
+    border-radius: 16px;
+}
+
+.btn-combine2 > p {
+      font-size: 25px;
+    line-height: 6vh;
+    transform: rotate(-45deg);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: black;
+    padding: 10; 
+ 
+}
+
+.item-slot-amount {
+    position: absolute;
+    top: -0.8vh;
+    left: 1.2vw;
+}
+
+.item-slot-amount > p {
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.4vh;
+    font-weight: 400;
+    cursor: none;
+}
+
+
+
+.item-slot-name {
+    position: absolute;
+    top: 0.8vh;
+    right: 0.55vw;
+}
+
+.item-slot-name > p {
+    color: wheat;
+    text-align: right;
+    font-size: 1.25vh;
+    font-weight: 400;
+    cursor: none;
+}
+
+.item-slot-label { 
+    position: absolute;
+    top: 73%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.item-slot-label > p {
+    font-weight: 400;
+    padding: 2.5px;
+    padding-left: 3px;
+    color: white;
+    font-size: 1.3vh;
+    text-align: left;
+    letter-spacing: 0px;
+    font-family: 'Oswald', sans-serif;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: none;
+}
+
+.item-slot-quality {
+    position: absolute;
+    bottom: 2vh;
+    width: 65%;
+    height: 80%;
+    left: 12px;
+    z-index: -1;
+    rotate: 270deg;
+    --background-color: rgba(32, 6, 6, 0.15);
+}
+
+.item-slot-quality-bar {
+    position: absolute;
+    width: 0%; 
+    height: 5%;
+    background-color: green;
+    z-index: 1;  
+}
+  
+.item-slot-quality p {
+    font-weight: 400;
+    padding: 0px;
+    right:185px;
+	padding-top: 100px;
+    color: green;
+    font-size: 1.3vh;
+    text-align: right;
+    letter-spacing: 0px;
+    rotate: 90deg;
+    font-family: 'Oswald', sans-serif;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: none;
+}
+
+
+
+.item-slot-img {
+    max-width: 100%;
+    max-height: 10%;
+    padding: 0.5vw;
+}
+
+.item-slot-img img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 9%;
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 90%;
+}
+
+.item-slot-img-itembox img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+    max-width: 75%;
+    max-height: 100%;
+}
+
+.item-slot-img2 img {
+    display:block;
+}
+
+.ui-draggable-dragging {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.player-inv-info {
+    position: absolute;
+    left: 3.3%;
+    top: 8.6%;
+    width: 28.8%;
+    z-index: 1000;
+    cursor: none;
+} 
+ 
+#player-inv-label {
+    position: relative;
+    color: white; 
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.01vh;
+    left: 0px;
+    top: 180px;
+    float: left;
+    text-transform: normal;
+    cursor: none;
+}
+
+#cash {
+  position: relative;
+    float: rigt;
+    padding: 5px;
+     bottom: 10px;
+    right: -1190px;
+    height:50px;
+    width: 100px;
+    transition: all .3s linear;
+    background-color: indianred;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 16px;
+}   
+
+#bank { 
+   position: relative;
+    float: right;
+    padding: 5px;
+     bottom: 50px;
+    right: -720px;
+    height:50px;
+    width: 170px;
+    transition: all .3s linear;
+    background-color: darkseagreen;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 16px;
+}
+
+
+#name { 
+    position: relative;
+    color: white; 
+    font-size: 49px; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    left: 820px;
+    top: -95px;  
+    float: left;
+    text-shadow: 2px 2px black;
+    cursor: none;  
+}
+
+#id { 
+    position: relative;
+    color: white; 
+    font-size: 49px; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    left: 745px;
+    top: -180px;  
+    float: left;
+    text-shadow: 2px 2px black;
+    cursor: none;  
+}
+
+#health { 
+   position: relative;
+    float: ri;
+    padding: 5px;
+    bottom: 110px;
+    right: -140px;
+    height:50px;
+    width: 100px;
+    transition: all .3s linear; 
+    background-color: hotpink;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 16px;
+}
+
+#shield { 
+   position: relative;
+    float: ri;
+    padding: 5px;
+    bottom: 150px;
+    right: -410px;
+    height:50px;
+    width: 100px;
+    transition: all .3s linear;
+    background-color: cadetblue;
+    color: black;
+    font-size: 25px;
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 16px;
+}
+ 
+#player-inv-weight {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1vh;
+    bottom: -620px;
+    right: -31%;
+    float: right;
+}
+
+#other-inv-label {
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.01vh;
+    left: -20px;
+    top: 184px;
+    float: left;
+    text-transform: normal;
+    cursor: none;
+}
+
+
+#other-inv-weight {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 100;
+   font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.1vh;
+    bottom: -610px;
+    right: -28.5%;
+    float: right;
+    cursor: none;
+}
+
+.player-inv-weight {
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+.player-inv-weight > p {
+    color: white;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.other-inv-info {
+    position: absolute;
+    left: 58.3%;
+    top: 8.6%;
+    width: 28.8%;
+    z-index: 1000;
+}
+
+.ply-iteminfo-container {
+    background: black;
+    border-radius: 3px;
+    color: rgba(220, 220, 220, 1);
+    border-left: 10px solid deepskyblue;
+    font-size: 1.35vh;
+    font-weight: 0;
+    left: 41%;
+    max-height: 25%;
+    min-height: 50px;
+    overflow: hidden;
+    padding: 1%;
+    pointer-events: none;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transition: opacity 0.6s ease;
+    width: 13%;
+    z-index: 10000; 
+}
+
+.item-info-title {
+    text-transform: normal;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 2.4vh;  
+    letter-spacing: 0.3px;  
+    line-height: 1;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.item-info-line {
+    position: absolute;
+     font-family: 'Oswald', sans-serif;
+    width: 85%;
+    background-color: #6d6d6d96;
+    height: 0.13vh;
+}
+
+.item-info-description {
+    text-transform: normal;
+    font-size: 1.4vh;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    font-family: 'Oswald', sans-serif;
+    color: wheat;
+    padding-left: 5px;
+    padding-top: .5vh;
+}
+
+.itemboxes-container {
+    height: 140px;
+    min-width: 129px;
+    max-width: 80vh;
+    width: fit-content;
+    position: absolute;
+    
+    left: 1%;
+    bottom: 30%;
+    overflow: hidden;
+}
+
+.template {
+    display: none;
+}
+
+.itembox-container {
+    display: none;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    border-left: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-bottom: 0.1vh solid rgba(169, 169, 169,0.6);
+    border-right: 0.1vh solid rgba(169, 169, 169,0.6);
+    margin-right: 1vh;
+    width: 10vh;
+    height: 11vh;
+   
+}
+
+.itembox-container::before {
+  content: "";
+  position: absolute;
+
+  width: 10%;
+  height: 1px;
+
+  top: 0;
+  left: -1px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.itembox-container::after {
+  content: "";
+  position: absolute;
+
+  width: 60%;
+  height: 1px;
+
+  top: 0;
+  left: calc(100% + 1px); 
+
+  transform: translateX(-100%);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+#itembox-action {
+    position: absolute;
+    color: white;
+    border-top-left-radius: 1px;
+    padding: 4px;
+    top: 0;
+    left: 0;
+}
+
+#itembox-action > p {
+    font-size: 14px;
+    font-weight: 400;
+     font-family: 'Oswald', sans-serif;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#itembox-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0fffd5;
+    height: 0.3vh;
+}
+
+.itembox-image {
+    max-width: 10%;
+    max-height: 100%;
+    padding: 0.10vw;
+}
+
+#itembox-label > p {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    top: -25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.requiredItem-container {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.requiredItem-box {
+    position: relative;
+    top: 70%;
+    left: 42%;
+    width: 10vh;
+    height: 11vh;
+    float: left;
+    margin-left: 20px;
+    background: rgba(35, 34, 56, 0.95);
+}
+
+#requiredItem-action {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#requiredItem-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0fffd5;
+    height: 0.3vh;
+}
+
+#requiredItem-label > p {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    top: -25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item-slot-img-itembox-test img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1.3vh;
+    width: 80px;
+    height: 80px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.z-hotbar-inventory {
+    position: absolute;
+    width: 3vw;
+    top:55%;
+    right: 4vw;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+.z-hotbar-inventory > .z-hotbar-item-slot > .z-hotbar-item-slot-key > p {
+    display: flex;
+    position: relative;
+    top: 8vh;
+    right: 3vh;
+    border: 0.1vh solid rgba(169, 169, 169,0.6);
+    color: white;
+    width: 2vh;
+    height: 2vh;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    font-size:2vh 
+}
+ 
+.z-hotbar-item-slot { 
+    position: relative;
+    width: 10.5vh;
+    height: 10.5vh;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    border-left: 0.1vh solid whitesmoke;
+    border-bottom: 0.1vh solid whitesmoke;
+    border-right: 0.1vh solid whitesmoke;
+    margin: 3px;
+    transition: opacity 0.2s;
+    opacity: 1.0;
+    z-index: 9999;
+}
+
+.z-hotbar-item-slot::before {
+  content: "";
+  position: absolute;
+
+  width: 10%;
+  height: 1px;
+
+  top: 0;
+  left: -1px;
+
+  background-color: whitesmoke;
+}
+
+.z-hotbar-item-slot::after {
+  content: "";
+  position: absolute;
+
+  width: 60%;
+  height: 1px;
+
+  top: 0;
+  left: calc(100% + 1px); 
+
+  transform: translateX(-100%);
+  background-color: whitesmoke;
+}
+
+.z-hotbar-item-slot-amount {
+    position: absolute;
+    bottom: 9.2vh;
+    left: 1.2vw;
+}
+
+.z-hotbar-item-slot-amount > p {
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
+.z-hotbar-item-slot-amount-name {
+    position: absolute;
+    bottom: 8vh;
+    right: 0.55vw;
+}
+
+.z-hotbar-item-slot-amount-name > p {
+    color: wheat;
+    text-align: right;
+    font-size: 14px;
+}
+
+.z-hotbar-item-slot-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    min-height: 2.2vh;
+    height: fit-content;
+}
+
+.z-hotbar-item-slot-label > p {
+    color: rgb(247, 247, 247);
+    font-size: 11.5px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Oswald', sans-serif;
+    font-variant: small-caps;
+}
+
+.z-hotbar-item-slot-img {
+    max-width: 50%;
+    max-height: 80%;
+    padding: 0.8vw;
+}
+
+.z-hotbar-item-slot-img img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -38%;
+    left: -1%;
+    width: auto;
+    height: auto;
+    max-width: 75px;
+    max-height: 750%;
+}
+
+.ammo-container {
+    position: absolute; 
+    background-color: rgba(20, 18, 32, 0.2);
+    width: 3.25%;
+    height: 44.16%;
+    top: 26%;
+    left: 6%;
+}
+
+.ammo-container-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(120, 10, 20, 0.5);
+    text-align: center;
+    color: rgba(216, 216, 216, 0.897);
+}
+
+.ammo-container-header > i {
+    line-height: 5vh;
+    font-size: 1.8vh;
+}
+
+.ammo-box {
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    top: 5vh;
+    background-color: rgba(0, 0, 0, .4);
+    margin-bottom: .5vh;
+    margin-top: .5vh;
+}
+
+.ammo-box > img {
+    position: absolute;
+    top: .15vh;
+    left: .2vh;
+    width: 5.25vh;
+    opacity: .25;
+}
+
+.ammo-box > span {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: .93vh;
+    bottom: 0;
+    right: 0;
+    margin: .3vh;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ammo-box-amount {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(36, 36, 36, 0.4);
+    bottom: 0;
+    max-height: 100%;
+}
+
+#pistol_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#smg_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#shotgun_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+#rifle_ammo > .ammo-box-amount {
+    height: 0%;
+}
+
+/* Weapon Attachments */
+
+.weapon-attachments-container {
+    position: absolute;
+    left: -100vw;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weapon-attachments-container-title {  
+    position: absolute; 
+    margin: 5vh; 
+    font-size: 3vh;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+}
+
+.weapon-attachments-container-description {
+    position: absolute;
+    margin: 5vh;
+    top: 5vh;
+    font-size: 1.7vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Oswald', sans-serif;
+}
+
+.weapon-attachments-container-details {
+    position: absolute;
+    margin: 5vh;
+    top: 9vh;
+    font-size: 1.4vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Oswald', sans-serif;
+}
+
+.weapon-attachments-container-detail-durability {
+    height: 1.5vh;
+    width: 10vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
+}
+
+.weapon-attachments-container-detail-durability-total {
+    height: 100%;
+    width: 50%;
+    background-color: #0fffd5;
+}
+
+.weapon-attachments-container-image {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 32%;
+    width: 30%;
+}
+
+.weapon-attachments {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 5vh;
+    width: 50vh;
+    height: 12.5vh;
+}
+
+.weapon-attachments-title {
+    position: absolute;
+    bottom: 14vh;
+    left: 0;
+    margin: 5vh;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4vh
+}
+
+.weapon-attachment {
+    position: relative;
+    height: 12.5vh;
+    width: 10.5vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(75, 75, 75);
+    margin-right: 1vh;
+    float: left;
+    transition: .05s linear;
+}
+
+.weapon-attachment:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(29, 29, 29);
+    transition: .05s linear;
+}
+
+.weapon-attachment-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(var(--main-label-color), 0.3);
+    padding: 2.1%;
+}
+
+.weapon-attachment-label > p {
+    color: #ffffff;
+    font-size: 1.1vh;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.9vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+.weapon-attachment-img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5vw;
+}
+
+.weapon-attachment-img > img {
+    display:block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.weapon-attachments-remove {
+    position: absolute;
+    width: 6.5vh;
+    height: 6.5vh;
+    background-color: rgb(15, 15, 15);
+    border-radius: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 20vh;
+    text-align: center;
+    color: white;
+    font-size: 2vh;
+    transition: background-color .05s linear;
+}
+
+.weapon-attachments-remove:hover {
+    background-color: rgb(18, 18, 18);
+}
+
+.weapon-attachments-remove > i {
+    line-height: 6.5vh;
+}
+
+.weapon-attachments-remove-hover {
+    background-color: #0fffd5;
+}
+
+.weapon-dragging-class {
+    animation: ShakeEffect .75s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ShakeEffect {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.weapon-attachments-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10vh;
+    height: 6vh;
+    margin: 5vh;
+    background-color: rgb(15, 15, 15);
+    border-radius: 1px;
+    text-align: center;
+    line-height: 6vh;
+    color: white;
+    font-family: 'Oswald', sans-serif;  
+    transition: .05s linear;
+}   
+.weapon-attachments-back:hover { 
+    background-color: rgb(18, 18, 18); 
+}
+
+
+
+
+
+.moneyTextArea {
+   font-family: 'Oswald', sans-serif;
+    /* margin-top: 2%; */
+    margin-left: 10%;
+    color: deepskyblue;
+    font-size: 16px;
+}
+
+
+
+.cashinv {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    font-size: 15px; 
+}
+
+.bankinv {    
+    font-family: Oswald; 
+    color: #ffffff;
+    font-size: 15px;
+} 

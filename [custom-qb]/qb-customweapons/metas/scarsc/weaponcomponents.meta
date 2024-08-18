@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponComponentInfoBlob>
+	<Infos>
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_SCARSC_CLIP_01</Name>
+			<Model>scarsc_mag_01</Model>
+			<LocName>WCT_CLIP</LocName>
+			<LocDesc>WCD_CLIP</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="30"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_SCARSC_CLIP_02</Name>
+			<Model>scarsc_mag_02</Model>
+			<LocName>WCT_CLIP</LocName>
+			<LocDesc>WCD_CLIP</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="30"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_SCARSC_CLIP_03</Name>
+			<Model>scarsc_mag_03</Model>
+			<LocName>WCT_CLIP</LocName>
+			<LocDesc>WCD_CLIP</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="60"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>		
+		<Item type="CWeaponComponentFlashLightInfo">
+			<Name>COMPONENT_SCARSC_FLSH_01</Name>
+			<Model>scarsc_flsh_01</Model>
+			<LocName>WCT_FLASH</LocName>
+			<LocDesc>WCD_FLASH</LocDesc>
+			<AttachBone>Gun_Root</AttachBone>
+			<WeaponAttachBone>Gun_Root</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<MainLightIntensity value="10.000000"/>
+			<MainLightColor value="0xFFC9C9FF"/>
+			<MainLightRange value="50.000000"/>
+			<MainLightFalloffExponent value="32.000000"/>
+			<MainLightInnerAngle value="0.000000"/>
+			<MainLightOuterAngle value="20.000000"/>
+			<MainLightCoronaIntensity value="3.000000"/>
+			<MainLightCoronaSize value="0.200000"/>
+			<MainLightVolumeIntensity value="0.300000"/>
+			<MainLightVolumeSize value="0.100000"/>
+			<MainLightVolumeExponent value="70.000000"/>
+			<MainLightVolumeOuterColor value="0xFF050E3B"/>
+			<MainLightShadowFadeDistance value="10.000000"/>
+			<MainLightSpecularFadeDistance value="10.000000"/>
+			<SecondaryLightIntensity value="7.500000"/>
+			<SecondaryLightColor value="0xFFFFFFFF"/>
+			<SecondaryLightRange value="15.000000"/>
+			<SecondaryLightFalloffExponent value="64.000000"/>
+			<SecondaryLightInnerAngle value="0.000000"/>
+			<SecondaryLightOuterAngle value="40.000000"/>
+			<SecondaryLightVolumeIntensity value="0.300000"/>
+			<SecondaryLightVolumeSize value="0.400000"/>
+			<SecondaryLightVolumeExponent value="24.000000"/>
+			<SecondaryLightVolumeOuterColor value="0xFF000F85"/>
+			<SecondaryLightFadeDistance value="10.000000"/>
+			<fTargetDistalongAimCamera value="8.000000"/>
+			<FlashLightBone>Gun_FLMuzzle</FlashLightBone>
+			<FlashLightBoneBulbOn>Bulb_On</FlashLightBoneBulbOn>
+			<FlashLightBoneBulbOff>Bulb_Off</FlashLightBoneBulbOff>
+		</Item>	
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_SCARSC_SCOPE_01</Name>
+			<Model>scarsc_scope_01</Model>
+			<LocName>WCT_SCOPE_MED</LocName>
+			<LocDesc>WCD_SCOPE_MED</LocDesc>
+			<AttachBone>AAPScop</AttachBone>
+			<WeaponAttachBone>WAPScop</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<ExtraZoomFactorForAccurateMode value="1.200000"/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>		
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_SCARSC_SCOPE_02</Name>
+			<Model>scarsc_scope_02</Model>
+			<LocName>WCT_SCOPE_MED</LocName>
+			<LocDesc>WCD_SCOPE_MED</LocDesc>
+			<AttachBone>AAPScop</AttachBone>
+			<WeaponAttachBone>WAPScop</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<ExtraZoomFactorForAccurateMode value="1.200000"/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>		
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_SCARSC_SCOPE_03</Name>
+			<Model>scarsc_scope_03</Model>
+			<LocName>WCT_SCOPE_MED</LocName>
+			<LocDesc>WCD_SCOPE_MED</LocDesc>
+			<AttachBone>AAPScop</AttachBone>
+			<WeaponAttachBone>WAPScop</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<ExtraZoomFactorForAccurateMode value="1.200000"/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>		
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_STOCK_01</Name>
+			<Model>scarsc_stock_01</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPScop_2</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>			
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_STOCK_02</Name>
+			<Model>scarsc_stock_02</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPScop_2</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>		
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_STOCK_03</Name>
+			<Model>scarsc_stock_03</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPScop_2</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>				
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_IRONSIGHT_01</Name>
+			<Model>scarsc_ironsight_01</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPFlsh_2</AttachBone>
+			<WeaponAttachBone>WAPFlshLasr_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>		
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_IRONSIGHT_02</Name>
+			<Model>scarsc_ironsight_02</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPFlsh_2</AttachBone>
+			<WeaponAttachBone>WAPFlshLasr_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>	
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_SCARSC_GRIP_01</Name>
+			<Model>scarsc_grip_01</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPGrip</AttachBone>
+			<WeaponAttachBone>WAPGrip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<CameraHash/>
+			<Reticule value="0"/>
+			<ReticuleHash/>
+		</Item>	
+		<Item type="CWeaponComponentSuppressorInfo">
+			<Name>COMPONENT_SCARSC_SUPP_01</Name>
+			<Model>scarsc_supp_01</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPSupp</AttachBone>
+			<WeaponAttachBone>WAPSupp</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<MuzzleBone>Gun_SuMuzzle</MuzzleBone>
+			<FlashFx>muz_pistol_silencer</FlashFx>
+            <ShouldSilence value="true" />		
+		</Item>			
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+

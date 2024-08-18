@@ -1,0 +1,257 @@
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+    display: none;
+    height: 100%;
+}
+
+div {
+    display: block;
+}
+
+#panel {
+    width: 350px;
+    margin: auto;
+    position: relative;
+    top: calc(100% - 380px);
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 20px;
+    transform: scale(0.75);
+}
+
+#menucontainer {
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+}
+
+#first, #second, #third, #fourth, #fifth, #sixth, #seven {
+    margin-top: 105px;
+    width: 36px;
+    float: left;
+    padding: 0px 5px;
+    background-color: transparent;
+}
+
+#first, #second, #third, #fourth, #fifth, #sixth, #seven {
+    margin-top: 0px;
+}
+
+#eight, #nine, #ten, #eleven, #twelv, #thirte {
+    margin-top: 109px;
+    width: 36px;
+    float: left;
+    padding: 15px 5px;
+    background-color: transparent;
+}
+
+#eight, #nine, #ten, #eleven, #twelv, #thirte {
+    margin-top: 0px;
+}
+
+.button {
+    border-radius: 22px;
+    border: 2px rgba(0, 0, 0, 0.5) solid;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    width: 32px;
+    height: 32px;
+    float: left;
+    background-position: center center;
+    background-size: auto;
+}
+
+.bg {
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('./images/buttonOff.png');
+    transition: background-image ease 1s;
+    transition: transform ease 0.1s;
+}
+
+.bg.disabled {
+    opacity: 0.5 !important;
+    background-image: url('./images/buttonOff.png') !important;
+}
+
+.bg.active.disabled {
+    background-image: url('./images/buttonOn.png') !important;
+}
+
+.bg:hover, .bg.active:hover {
+    background-image: url('./images/buttonHover.png');
+}
+
+.bg:active {
+    transform: translateX(4px);
+    transform: translateY(4px);
+}
+
+.bg.active {
+    background-image: url('./images/buttonOn.png');
+}
+
+#crosshair1 {
+    background-image: url('./images/crosshair1.png');
+}
+#crosshair2 {
+    background-image: url('./images/crosshair2.png');
+}
+#crosshair3 {
+    background-image: url('./images/crosshair3.png');
+}
+#crosshair4 {
+    background-image: url('./images/crosshair4.png');
+}
+#crosshair5 {
+    background-image: url('./images/crosshair5.png');
+}
+#crosshair6 {
+    background-image: url('./images/crosshair6.png');
+}
+#crosshair7 {
+    background-image: url('./images/crosshair7.png');
+}
+#crosshair8 {
+    background-image: url('./images/crosshair8.png');
+}
+#crosshair9 {
+    background-image: url('./images/crosshair9.png');
+}
+#crosshair10 {
+    background-image: url('./images/crosshair10.png');
+}
+#crosshair11 {
+    background-image: url('./images/crosshair11.png');
+}
+#crosshair12 {
+    background-image: url('./images/crosshair12.png');
+}
+#crosshair13 {
+    background-image: url('./images/crosshair14.png');
+}
+
+.center {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	height: 0.5%;
+	width: 0.2%;
+}
+
+.style1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+.style2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+.style3 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+.style4 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+.style5 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style6 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style7 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style8 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style9 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style10 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style11 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+.style12 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}
+
+.style13 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+
+}

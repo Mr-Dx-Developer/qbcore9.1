@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>glock19gen4</modelName>
+			<txdName>glock19gen4</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>glock19gen4_clip_01</modelName>
+			<txdName>glock19gen4</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>glock19gen4_clip_02</modelName>
+			<txdName>glock19gen4_clip_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>glock19gen4_flsh_01</modelName>
+			<txdName>glock19gen4_flsh_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

@@ -1,0 +1,318 @@
+/*--<+>-- --<+>--  --<+>--  --<+>-- --<+>-- --<+>--  --<+>--  --<+>-- --<+>-- --<+>--  --<+>--  --<+>-- 
+
+--<+>-- --<+>--  --<+>--  --<+>-- ☾ AMERICAN SCRIPT ☾ --<+>-- --<+>--  --<+>--  --<+>-- 
+
+--<+>-- --<+>--  --<+>--  --<+>-- --<+>-- --<+>--  --<+>--  --<+>-- --<+>-- --<+>--  --<+>--  --<+>-- */
+
+
+@font-face {
+    font-family: bankgothic;
+    src: url('../bankgothic.ttf');
+}
+
+body  {
+    background-color: none !important;
+    margin: auto;
+    font-family: 'Aldrich';
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* COMPUTER Container */
+.pc-frame {
+    position: absolute;
+	    top: -10vh;
+    left: -12vw;
+    height: 82.5vh;
+    width: 132vh;
+/*     width: 31.3vh;
+    bottom: -37vh;
+    height: 63.7vh;
+    left: -155.9%; */
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+	animation: scaleUp 1.10s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+/* Phone Container */
+.phone-frame {
+    position: absolute;
+    width: 31.3vh;
+    bottom: -7vh;
+    height: 64.1vh;
+    left: -19.9%;
+/*     width: 31.3vh;
+    bottom: -37vh;
+    height: 63.7vh;
+    left: -155.9%; */
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+	animation: scaleUp 1.10s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+/* LOGO  */
+.logo-frame {
+    position: absolute;
+    width: 40vh;
+    bottom: 30vh;
+    height: 24.1vh;
+    left: -32%;
+/*     width: 31.3vh;
+    bottom: -37vh;
+    height: 63.7vh;
+    left: -155.9%; */
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+	animation: scaleUp 2.10s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+
+#start-container {
+    position: absolute;
+    top: 19vh;
+    left: 10vw;
+    height: 60vh;
+    width: 29.5vh;
+    border: 5px solid rgba(31, 30, 30, 1);
+    background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 2.5vh;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+
+	background-image: url("https://assets.codepen.io/285131/paintbg.jpg");
+	    background-size: cover;
+    background-repeat: no-repeat;
+
+	animation: roadRunnerIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
+
+.tituleone {
+	font-family: bankgothic;
+    position: absolute;
+    right: 0vh;
+	
+    bottom: 34.5vh;
+    color: #000000;
+    height: 3vh;
+    width: 30vh;
+    background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5vh;
+
+  font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 1.7px;
+ text-align: center;
+
+}
+
+.titulesecond {
+	font-family: bankgothic;
+    position: absolute;
+    right: 0vh;
+	
+    bottom: 20.5vh;
+    color: #000000;
+    height: 3vh;
+    width: 30vh;
+    background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 0.5vh;
+
+  font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 1.7px;
+ text-align: center;
+
+}
+
+.chipmuestra {
+	font-size: 3rem;
+    position: absolute;
+    bottom: 12.5vh;
+    right: 12vh;
+
+    border: transparent !important;
+    background-color: transparent !important;
+    color: #000000
+}
+
+.progress-container .progress {
+    position: absolute;
+    left: 2.5vh;
+	top: 30vh;
+    height: 2.5vh;
+    width: 0;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.8);
+    transition: width 0.4s ease;
+}
+
+#game-container {
+    position: absolute;
+    top: 16vh;
+    left: 22vw;
+    height: 65vh;
+    width: 100vh;
+    border: 5px solid rgba(31, 30, 30, 1);
+    border-radius: 25px;
+    background-color: black;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-image: url("https://assets.codepen.io/285131/paintbg.jpg");
+	    background-size: cover;
+    background-repeat: no-repeat;
+
+	 animation: scaleUp 1.10s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+#game-area {
+    position: fixed;
+    margin: 3vh;
+    border: transparent;
+    border-radius: 25px;
+    padding: 20px;
+    top: 17vh;
+    height: 43vh;
+    width: 90vh;
+    pointer-events: auto;
+}
+
+.wrapper {
+    position: relative;
+    height: 65vh;
+    width: 100vh;
+    background-color: transparent !important;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: 25px;
+}
+
+.shadow {
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    left: 52.5%;
+    top: 52%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: radial-gradient(circle at center, transparent, #000 3%);
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+#chip {
+    font-size: 2rem;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: transparent !important;
+    background-color: transparent !important;
+    color: #000000
+}
+
+#info-container {
+	font-family: bankgothic;
+    position: absolute;
+    top: 54.6vh;
+    left: 41vh;
+    height: 10vh;
+    width: 20vh;
+    background-color: rgba(31, 30, 30, 1);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 85px;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 0.2vh;
+    font-size: 0.75rem;
+	letter-spacing: 2px;
+}
+
+#countdown-container {
+	font-family: bankgothic;
+    position: absolute;
+    top: 61.7vh;
+    left: 41vh;
+    height: 1.8vh;
+    width: 14vw;
+    background-color: rgba(31, 30, 30, 1);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 
+    0px 4px 3px rgba(0,0,0,0.6),
+    0px 8px 13px rgba(0,0,0,0.3),
+    0px 18px 23px rgba(0,0,0,0.3);
+    padding: 1vh;
+	    font-size: 0.75rem;
+	letter-spacing: 2px;
+}
+
+#countdown {
+    position: absolute;
+    top: -0.9vh;
+}
+
+
+
+@keyframes roadRunnerIn {
+  0% {
+    transform:translateX(-1500px) skewX(30deg) scaleX(1.3);
+  }
+  70% {
+    transform:translateX(30px) skewX(0deg) scaleX(.9);
+  }
+  100% {
+    transform:translateX(0px) skewX(0deg) scaleX(1);
+  }
+}
+
+
+
+@keyframes scaleUp {
+  0% {
+    transform:scale(.8) translateY(-50px);
+    opacity:0;
+  }
+  100% {
+    transform:scale(1) translateY(0px);
+    opacity:1;
+  }
+}
+@keyframes blowUpContentTwo {
+  0% {
+    transform:scale(2);
+    opacity:0;
+  }
+  100% {
+    transform:scale(1);
+    opacity:1;
+  }
+}

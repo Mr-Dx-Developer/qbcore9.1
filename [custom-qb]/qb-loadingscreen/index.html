@@ -1,0 +1,124 @@
+<html>
+    <head>
+    <title>F1YT2019</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/config.js"></script>
+</head>
+
+<body class="is-preload">
+    <div class="video-background">
+        <div class="video-foreground">
+          <iframe id="YTvdo"></iframe>
+        </div>        
+</div>
+    <div id="wrapper">      
+        <footer id="footer">
+            teste
+            <div id="overlay" class="hideoverlay">
+        </div>
+        </footer>                        
+        <div class="overlay">
+        <div id="videoContainer">
+        <div id="main">
+                <header id="header">
+                    <h1 id="name_loadingscreen"></h1>
+                        <nav>
+                        <ul>
+                            <li><a href="https://discord.gg/qbcoreframework" class="icon brands fa-discord" target="_blank" onclick="window.invokeNative('openUrl', 'https://discord.me/almadarpdiscord');" style="color: #738ADB"><span class="label">Discord</span></a></li>
+                            <!-- <li><a href="https://alrp.fun/" class="fas fa-code" target="_blank" onclick="window.invokeNative('openUrl', 'https://alrp.fun/');"><span class="label">Website</span></a></li>
+                            <li><a href="https://www.tiktok.com/@almada_roleplay" class="fab fa-tiktok" target="_blank" onclick="window.invokeNative('openUrl', 'https://www.tiktok.com/@almada_roleplay');" style="color: black"><span class="label">Website</span></a></li>
+                            <li><a href="https://www.instagram.com/Almada_Roleplay/" class="icon brands fa-instagram" target="_blank" onclick="window.invokeNative('openUrl', 'https://www.instagram.com/Almada_Roleplay/');" style="color: #da10a4;"><span class="label">Instagram</span></a></li> -->
+                        </ul>
+                    </nav>
+                </header>
+        </div>
+		</div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <img src="img/music.png" width="30px" height="30px">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <div id="app-cover">
+                <div class="player">
+                    <div class="wrapper_player">
+                        <div class="top-bar">
+                            <i class="material-icons">expand_more</i>
+                            <span>Now Playing</span>
+                            <i class="material-icons">more_horiz</i>
+                        </div>
+                        <div class="volume-box">
+                            <span class="volume-down"><i class="material-icons">remove</i></span>
+                            <input type="range" class="volume-range" step="10" min="0" max="100" oninput="setVolume(this.value)" onchange="setVolume(this.value)">
+                            <span class="volume-up"><i class="material-icons">add</i></span>
+                        </div>
+                        <div class="img-area">
+                            <img src="" alt="">
+                        </div>
+                        <div class="song-details">
+                            <p class="name"></p>
+                            <p class="artist"></p>
+                        </div>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <audio id="main-audio" src=""></audio>
+                            </div>
+                            <div class="song-timer">
+                                <span class="current-time">0:00</span>
+                                <span class="max-duration">0:00</span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                            <i class="material-icons volume" onclick="handleVolume()">volume_up</i>
+                            <i id="prev" class="material-icons">skip_previous</i>
+                            <div class="play-pause">
+                                <i class="material-icons play">play_arrow</i>
+                            </div>
+                            <i id="next" class="material-icons">skip_next</i>
+                            <i id="more-music" class="material-icons">queue_music</i>
+                        </div>
+                        <div class="music-list">
+                            <div class="header_player">
+                                <div class="row">
+                                    <i class="list material-icons">queue_music</i>
+                                    <span>Music list</span>
+                                </div>
+                                <i id="close" class="material-icons">close</i>
+                            </div>
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </ul>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!--
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                              THANKS FOR USE MY LOADING SCREEN JOIN THE DISCORD PLEASE :(
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>MK47MAG2FluffysMods</modelName>
+			<txdName>MK47MAGFluffysMods</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="400"/>
+		</Item>
+		<Item>
+			<modelName>MK47MAG1FluffysMods</modelName>
+			<txdName>MK47MAGFluffysMods</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="400"/>
+		</Item>
+		<Item>
+			<modelName>MK47FluffysMods</modelName>
+			<txdName>MK47FluffysMods</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

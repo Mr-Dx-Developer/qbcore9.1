@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>m6ic</modelName>
+			<txdName>m6ic</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>m6ic_frame_01</modelName>
+			<txdName>m6ic</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_frame_02</modelName>
+			<txdName>m6ic</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_01</modelName>
+			<txdName>m6ic_stock_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_stock_02</modelName>
+			<txdName>m6ic_stock_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_03</modelName>
+			<txdName>m6ic_stock_03</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_04</modelName>
+			<txdName>m6ic_stock_04</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_05</modelName>
+			<txdName>m6ic_stock_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_06</modelName>
+			<txdName>m6ic_stock_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>m6ic_stock_07</modelName>
+			<txdName>m6ic_stock_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+		<Item>
+			<modelName>m6ic_stock_08</modelName>
+			<txdName>m6ic_stock_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_clip_01</modelName>
+			<txdName>m6ic_clip_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+		<Item>
+			<modelName>m6ic_clip_02</modelName>
+			<txdName>m6ic_clip_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_clip_03</modelName>
+			<txdName>m6ic_clip_03</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_clip_04</modelName>
+			<txdName>m6ic_clip_04</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_clip_05</modelName>
+			<txdName>m6ic_clip_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_clip_06</modelName>
+			<txdName>m6ic_clip_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>				
+		<Item>
+			<modelName>m6ic_supp_01</modelName>
+			<txdName>m6ic_supp_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+		<Item>
+			<modelName>m6ic_supp_02</modelName>
+			<txdName>m6ic_supp_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_01</modelName>
+			<txdName>m6ic_scope_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_02</modelName>
+			<txdName>m6ic_scope_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_03</modelName>
+			<txdName>m6ic_scope_03</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_04</modelName>
+			<txdName>m6ic_scope_04</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_05</modelName>
+			<txdName>m6ic_scope_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_06</modelName>
+			<txdName>m6ic_scope_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_07</modelName>
+			<txdName>m6ic_scope_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_08</modelName>
+			<txdName>m6ic_scope_08</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_09</modelName>
+			<txdName>m6ic_scope_08</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_scope_10</modelName>
+			<txdName>m6ic_scope_10</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+		<Item>
+			<modelName>m6ic_flsh_01</modelName>
+			<txdName>m6ic_flsh_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>m6ic_flsh_02</modelName>
+			<txdName>m6ic_flsh_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

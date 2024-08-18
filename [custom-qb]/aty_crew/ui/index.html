@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ATY CREW</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<img src="assets/closebtn.png" class="close-btn" />
+			<img src="assets/back.png" class="back-btn" />
+
+			<div class="notify">
+				<!--<div class="wrapper success">
+					<div class="title"><i class="fa-solid fa-triangle-exclamation"></i> HATA</div>
+					<div class="content">Bu isimde bir crew zaten var, lütfen başka bir isim deneyin.</div>
+				</div>-->
+			</div>
+
+			<div class="container">
+				<div class="top">
+					<div class="title">
+						<span data-locale="Title1">QBCore</span>
+						<p style="display: inline-block" data-locale="Title2">Crew System</p>
+					</div>
+					<div class="subtitle" data-locale="Subtitle">CREW SYTEM</div>
+					<div class="custom-text" data-locale="Custom-Text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit molestias recusandae
+						explicabo nemo corrupti tenetur veritatis sequi totam rerum quos!
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="button" id="create-crew" data-locale="Create-Crew">Crew Kur</div>
+					<div class="button" id="invite" data-locale="Invite-Crew">Davet Et</div>
+					<div class="button" id="player-list" data-locale="Crew-MemberList">Üye Listesi</div>
+					<div class="button" id="scoreboard" data-locale="Crew-Scoreboard">Crew Puan Tablosu</div>
+					<div class="button" id="leave" data-locale="Leave-Crew">Ayrıl</div>
+					<div class="button" id="delete" data-locale="Delete-Crew">Crew'i Sil</div>
+				</div>
+
+				<div class="create-crew">
+					<div class="title" data-locale="Crew-CreateTitle">CREW OLUŞTUR</div>
+					<input
+						type="text"
+						class="input-crew"
+						placeholder="Crew name..."
+						minlength="4"
+						maxlength="12"
+						required
+					/>
+					<div class="create" data-locale="Crew-CreateButton">OLUŞTUR</div>
+				</div>
+
+				<div class="sec-bg"></div>
+
+				<div class="invite-crew">
+					<div class="title" data-locale="Crew-InviteRequestTitle">
+						frosty Sizi "testo taylan" ekibine davet etti
+					</div>
+					<div class="btn-wrapper">
+						<div class="btn-cancel" data-target="join" data-locale="Crew-InviteRequestReject">Reddet</div>
+						<div class="btn-accept" data-target="join" data-locale="Crew-InviteRequestAccept">Kabul Et</div>
+					</div>
+				</div>
+
+				<div class="leave-crew">
+					<div class="title" data-locale="Crew-LeaveTitle">Ayrılmak İstediğinize Emin Misiniz?</div>
+					<div class="btn-wrapper">
+						<div class="btn-cancel" data-locale="Crew-StayButton">Kal</div>
+						<div class="btn-accept" data-target="leave" data-locale="Crew-LeaveButton">Ayrıl</div>
+					</div>
+				</div>
+
+				<div class="delete-crew">
+					<div class="title" data-locale="Crew-DeleteTitle">Crew'i Silmek İstediğinize Emin Misiniz?</div>
+					<div class="btn-wrapper">
+						<div class="btn-cancel" data-locale="Crew-DontDeleteButton">Vazgeç</div>
+						<div class="btn-accept" data-target="delete" data-locale="Crew-DeleteButton">Sil</div>
+					</div>
+				</div>
+
+				<div class="invite-menu">
+					<div class="title" data-locale="Crew-InviteTitle">DAVET ET</div>
+					<div class="players">
+						<!--<div class="player-wrapper">
+							<div class="image"><img src="assets/invite-image.png" class="invite-image" /></div>
+							<div class="name">atiysu</div>
+							<div class="id"><span>255</span>ID</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="crew-members">
+				<div class="main-div">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<span data-locale="Crew-NameTitle">Name</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-RankTitle">Rank</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-Actions" class="only-leader">Actions</span>
+								</th>
+								<th>
+									<span data-locale="Crew-KillsTitle">Kills</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-DeathsTitle">Death</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="member-list">
+							<tr>
+								<!-- <td><img src="assets/invite-image.png" />atiysu</td>
+								<td><span>New Members</span></td>
+								<td><img src="assets/down.png" /><img src="assets/up.png" /><img src="assets/kick.png" /></td>
+								<td>56</td>
+								<td>20</td> -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="crew-list">
+				<div class="main-div">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<span data-locale="Crew-ScoreboardRank">Rank</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-ScoreboardName">Crew Adı</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-ScoreboardDate">Kuruluş Tarihi</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-ScoreboardMembers">Üyeler</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+								<th>
+									<span data-locale="Crew-ScoreboardKills">Öldürmeler</span>
+									<i class="fa-solid fa-sort-down"></i>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="crew-list">
+							<!--<tr>
+								<td>1</td>
+								<td>atiysu</td>
+								<td>03/23/23</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>atiysu</td>
+								<td>03/23/23</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>
+
+							<tr class="your-crew">
+								<td>1</td>
+								<td>atiysu</td>
+								<td>03/23/23</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+
+		<div class="bg">
+			<img src="assets/bg.png" class="background" />
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

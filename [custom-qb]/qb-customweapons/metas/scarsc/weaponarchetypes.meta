@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>		
+		<Item>
+			<modelName>scarsc</modelName>
+			<txdName>scarsc</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_flsh_01</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_grip_01</modelName>
+			<txdName>scarsc</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_ironsight_01</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_ironsight_02</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_mag_01</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_mag_02</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_mag_03</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_scope_01</modelName>
+			<txdName>scarsc_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_scope_02</modelName>
+			<txdName>scarsc_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_scope_03</modelName>
+			<txdName>scarsc_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>
+		<Item>
+			<modelName>scarsc_stock_01</modelName>
+			<txdName>scarsc</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>		
+		<Item>
+			<modelName>scarsc_stock_02</modelName>
+			<txdName>scarsc</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>		
+		<Item>
+			<modelName>scarsc_stock_03</modelName>
+			<txdName>scarsc</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>				
+		<Item>
+			<modelName>scarsc_supp_01</modelName>
+			<txdName>scarsc_extra</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="75"/>
+		</Item>				
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

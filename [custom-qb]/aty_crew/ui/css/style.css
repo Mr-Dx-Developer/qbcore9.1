@@ -1,0 +1,877 @@
+@import url("fonts.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	font-family: "TT Lakes Neue", sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: none;
+}
+
+/* BACKGROUND */
+.bg {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+.bg img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.bg img .background {
+	z-index: -1;
+}
+
+@keyframes notifyAnim {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* MAIN */
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main .notify {
+	position: absolute;
+	right: 0;
+	top: 135px;
+	width: 273px;
+	height: 85px;
+	animation: notifyAnim 0.2s ease forwards;
+}
+main .notify .wrapper {
+	padding: 14px 14px 14px 30px;
+	width: 100%;
+	height: 85px;
+	margin-bottom: 10px;
+}
+main .notify .wrapper:last-child {
+	margin: 0;
+}
+main .notify .success {
+	background: linear-gradient(270deg, rgba(88, 227, 64, 0.36) 0%, rgba(88, 227, 64, 0) 100%);
+}
+main .notify .success .title {
+	width: 100%;
+	text-align: right;
+	height: 18px;
+	line-height: 18px;
+	color: #95f578;
+	font-size: 15px;
+	word-spacing: 3px;
+}
+main .notify .success .content {
+	text-align: right;
+	width: 100%;
+	height: 63px;
+	display: flex;
+	justify-content: right;
+	color: #95f578;
+	font-size: 12px;
+}
+main .notify .info {
+	background: linear-gradient(270deg, rgba(64, 154, 227, 0.36) 0%, rgba(64, 154, 227, 0) 100%);
+}
+main .notify .info .title {
+	width: 100%;
+	text-align: right;
+	height: 18px;
+	line-height: 18px;
+	color: #78cdf5;
+	font-size: 15px;
+	word-spacing: 3px;
+}
+main .notify .info .content {
+	text-align: right;
+	width: 100%;
+	height: 63px;
+	display: flex;
+	justify-content: right;
+	color: #78cdf5;
+	font-size: 12px;
+}
+main .notify .error {
+	background: linear-gradient(270deg, rgba(227, 64, 64, 0.36) 0%, rgba(227, 64, 64, 0) 100%);
+}
+main .notify .error .title {
+	width: 100%;
+	text-align: right;
+	height: 18px;
+	line-height: 18px;
+	color: #f5787f;
+	font-size: 15px;
+	word-spacing: 3px;
+}
+main .notify .error .content {
+	text-align: right;
+	width: 100%;
+	height: 63px;
+	display: flex;
+	justify-content: right;
+	color: rgba(245, 120, 127, 0.6);
+	font-size: 12px;
+}
+main .close-btn {
+	position: absolute;
+	top: 34px;
+	right: 34px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	transition: scale 0.2s;
+}
+main .close-btn:hover {
+	scale: 1.05;
+}
+main .back-btn {
+	display: none;
+	position: absolute;
+	top: 34px;
+	left: 34px;
+	height: 60px;
+	cursor: pointer;
+	transition: scale 0.2s;
+}
+main .back-btn:hover {
+	scale: 1.05;
+}
+main .container {
+	width: 530px;
+}
+main .container .top {
+	width: 100%;
+	text-align: center;
+}
+main .container .top .title {
+	color: #fff;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 45px;
+	font-weight: 700;
+}
+main .container .top .title span {
+	color: #f54c4c;
+	margin-right: 20px;
+}
+main .container .top .subtitle {
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 25px;
+	line-height: 70px;
+}
+main .container .top .custom-text {
+	font-family: "Barlow";
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 40px;
+	line-height: 20px;
+}
+main .container .bottom {
+	width: 100%;
+}
+main .container .bottom .button {
+	cursor: pointer;
+	width: 100%;
+	height: 68px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.03);
+	margin-bottom: 24px;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 30px;
+	font-weight: 500;
+	border-bottom: rgba(0, 0, 0, 0) !important;
+	border: 3px solid;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) 1;
+}
+main .container .bottom .button:hover {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+main .container .bottom .button.disabled {
+	pointer-events: none;
+	opacity: 0.3;
+}
+main .container .bottom #leave,
+main .container .bottom #delete {
+	border-image: linear-gradient(to bottom, rgba(245, 76, 76, 0.4196078431), rgba(255, 255, 255, 0)) 1;
+	background: linear-gradient(180deg, rgba(235, 86, 86, 0.0980392157) 0%, rgba(227, 93, 93, 0.0156862745) 100%);
+}
+main .container .bottom #leave:hover,
+main .container .bottom #delete:hover {
+	background: linear-gradient(180deg, rgba(235, 86, 86, 0.25) 0%, rgba(227, 93, 93, 0.0156862745) 100%);
+}
+main .container .sec-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(2, 4, 9, 0.431372549);
+	display: none;
+}
+main .container .create-crew {
+	display: none;
+	border: 3px solid;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) 1;
+	width: 500px;
+	height: 220px;
+	background: radial-gradient(115.23% 115.23% at 50% 0%, rgba(255, 255, 255, 0.104) 0%, rgba(255, 255, 255, 0) 100%),
+		rgba(3, 6, 12, 0.95);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	padding: 28px;
+}
+main .container .create-crew .title {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	margin-bottom: 24px;
+}
+main .container .create-crew .title::after {
+	top: 85%;
+	right: 2%;
+	position: absolute;
+	content: "";
+	width: 100px;
+	line-height: 20px;
+	border-top: 2px solid rgba(255, 255, 255, 0.19);
+}
+main .container .create-crew .title::before {
+	top: 85%;
+	left: 2%;
+	position: absolute;
+	content: "";
+	width: 100px;
+	line-height: 20px;
+	border-top: 2px solid rgba(255, 255, 255, 0.19);
+}
+main .container .create-crew input {
+	width: 100%;
+	height: 51px;
+	padding: 14px;
+	background: rgba(255, 255, 255, 0.04);
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-size: 17px;
+	font-family: "Barlow", sans-serif;
+}
+main .container .create-crew .create {
+	width: 100%;
+	height: 45px;
+	font-size: 17px;
+	color: #2edb7f;
+	background: linear-gradient(180deg, rgba(71, 232, 136, 0.37) 0%, rgba(71, 232, 136, 0) 127.78%);
+	filter: drop-shadow(0px 0px 22px rgba(46, 219, 127, 0.19));
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+main .container .create-crew .create::before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: calc(100% - 6px);
+	height: 39px;
+	border: 3px solid rgba(67, 240, 147, 0.31);
+	z-index: 999;
+	border-radius: 5px;
+}
+main .container .create-crew .create:hover {
+	background: linear-gradient(180deg, rgba(71, 232, 136, 0.47) 0%, rgba(71, 232, 136, 0) 127.78%);
+}
+main .container .invite-crew,
+main .container .delete-crew,
+main .container .leave-crew {
+	display: none;
+	border: 3px solid;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) 1;
+	width: 500px;
+	height: 180px;
+	background: radial-gradient(115.23% 115.23% at 50% 0%, rgba(255, 255, 255, 0.104) 0%, rgba(255, 255, 255, 0) 100%),
+		rgba(3, 6, 12, 0.95);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	padding: 28px;
+	font-family: "Barlow", sans-serif !important;
+}
+main .container .invite-crew .btn-wrapper,
+main .container .delete-crew .btn-wrapper,
+main .container .leave-crew .btn-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+main .container .invite-crew .title,
+main .container .delete-crew .title,
+main .container .leave-crew .title {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.44);
+	font-weight: 500;
+	position: relative;
+	font-family: "Barlow";
+}
+main .container .invite-crew .btn-cancel,
+main .container .delete-crew .btn-cancel,
+main .container .leave-crew .btn-cancel {
+	padding-bottom: 2px;
+	float: left;
+	width: 40%;
+	height: 45px;
+	color: rgba(255, 255, 255, 0.44);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0) 135%);
+	filter: drop-shadow(0px 0px 22px rgba(46, 219, 127, 0.19));
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+main .container .invite-crew .btn-cancel::before,
+main .container .delete-crew .btn-cancel::before,
+main .container .leave-crew .btn-cancel::before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: calc(100% - 4px);
+	height: 39px;
+	border: 2px solid rgba(255, 255, 255, 0.29);
+	z-index: 999;
+	border-radius: 5px;
+}
+main .container .invite-crew .btn-cancel:hover,
+main .container .delete-crew .btn-cancel:hover,
+main .container .leave-crew .btn-cancel:hover {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 135%);
+}
+main .container .invite-crew .btn-accept,
+main .container .delete-crew .btn-accept,
+main .container .leave-crew .btn-accept {
+	padding-bottom: 2px;
+	float: left;
+	width: 40%;
+	height: 45px;
+	font-size: 17px;
+	color: #e45a5f;
+	background: linear-gradient(180deg, rgba(217, 96, 96, 0.38) 0%, rgba(217, 96, 96, 0) 135%);
+	border-radius: 5px;
+	filter: drop-shadow(0px 0px 22px rgba(46, 219, 127, 0.19));
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+main .container .invite-crew .btn-accept::before,
+main .container .delete-crew .btn-accept::before,
+main .container .leave-crew .btn-accept::before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: calc(100% - 4px);
+	height: 39px;
+	border: 2px solid rgba(214, 91, 91, 0.29);
+	z-index: 999;
+	border-radius: 5px;
+}
+main .container .invite-crew .btn-accept:hover,
+main .container .delete-crew .btn-accept:hover,
+main .container .leave-crew .btn-accept:hover {
+	background: linear-gradient(180deg, rgba(217, 96, 96, 0.45) 0%, rgba(217, 96, 96, 0) 135%);
+}
+main .container .invite-crew .btn-cancel {
+	padding-bottom: 2px;
+	float: left;
+	width: 40%;
+	height: 45px;
+	color: #e45a5f;
+	background: linear-gradient(180deg, rgba(217, 96, 96, 0.38) 0%, rgba(217, 96, 96, 0) 135%);
+	filter: drop-shadow(0px 0px 22px rgba(46, 219, 127, 0.19));
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+main .container .invite-crew .btn-cancel::before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: calc(100% - 4px);
+	height: 39px;
+	border: 2px solid rgba(214, 91, 91, 0.29);
+	z-index: 999;
+	border-radius: 5px;
+}
+main .container .invite-crew .btn-cancel:hover {
+	background: linear-gradient(180deg, rgba(217, 96, 96, 0.45) 0%, rgba(217, 96, 96, 0) 135%);
+}
+main .container .invite-crew .btn-accept {
+	padding-bottom: 2px;
+	float: left;
+	width: 40%;
+	height: 45px;
+	font-size: 17px;
+	color: #2edb7f;
+	background: linear-gradient(180deg, rgba(71, 232, 136, 0.37) 0%, rgba(71, 232, 136, 0) 127.78%);
+	border-radius: 5px;
+	filter: drop-shadow(0px 0px 22px rgba(46, 219, 127, 0.19));
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+main .container .invite-crew .btn-accept::before {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: calc(100% - 4px);
+	height: 39px;
+	border: 2px solid rgba(67, 240, 147, 0.31);
+	z-index: 999;
+	border-radius: 5px;
+}
+main .container .invite-crew .btn-accept:hover {
+	background: linear-gradient(180deg, rgba(71, 232, 136, 0.47) 0%, rgba(71, 232, 136, 0) 127.78%);
+}
+main .container .invite-menu {
+	border-bottom: 0 !important;
+	display: none;
+	border: 3px solid;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)) 1;
+	width: 500px;
+	height: 300px;
+	background: radial-gradient(115.23% 115.23% at 50% 0%, rgba(255, 255, 255, 0.104) 0%, rgba(255, 255, 255, 0) 100%),
+		rgba(3, 6, 12, 0.95);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	padding: 28px;
+}
+main .container .invite-menu .title {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	position: relative;
+	margin-bottom: 24px;
+}
+main .container .invite-menu .title::after {
+	top: 85%;
+	right: 10%;
+	position: absolute;
+	content: "";
+	width: 100px;
+	line-height: 20px;
+	border-top: 2px solid rgba(255, 255, 255, 0.19);
+}
+main .container .invite-menu .title::before {
+	top: 85%;
+	left: 10%;
+	position: absolute;
+	content: "";
+	width: 100px;
+	line-height: 20px;
+	border-top: 2px solid rgba(255, 255, 255, 0.19);
+}
+main .container .invite-menu .players {
+	width: 100%;
+	height: calc(100% - 50px);
+	overflow-y: auto;
+	padding: 0 10px;
+}
+main .container .invite-menu .players::-webkit-scrollbar {
+	width: 2px;
+}
+main .container .invite-menu .players::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0.2784313725);
+	border-radius: 10px;
+}
+main .container .invite-menu .players::-webkit-scrollbar-thumb {
+	background-color: #f54c4c;
+}
+main .container .invite-menu .players .player-wrapper {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 134.31%);
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.56);
+	font-family: "Barlow", sans-serif !important;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+main .container .invite-menu .players .player-wrapper:last-child {
+	margin: 0;
+}
+main .container .invite-menu .players .player-wrapper:hover {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 134.31%);
+}
+main .container .invite-menu .players .player-wrapper .image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin: 0 20px;
+	outline: none;
+	padding: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.29);
+}
+main .container .invite-menu .players .player-wrapper .image img {
+	padding: 4px;
+	width: 35px;
+	height: 35px;
+}
+main .container .invite-menu .players .player-wrapper .name {
+	display: flex;
+	align-items: center;
+	width: 63%;
+	height: 45px;
+	font-family: "Barlow", sans-serif !important;
+	font-weight: 500;
+}
+main .container .invite-menu .players .player-wrapper .id {
+	display: flex;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	font-family: "Barlow", sans-serif !important;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+}
+main .container .invite-menu .players .player-wrapper .id span {
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.56);
+	font-size: 15px;
+	margin-right: 10px;
+	display: block;
+	font-family: "Barlow", sans-serif !important;
+}
+main .crew-members {
+	display: none;
+	width: 988px;
+	padding: 0 10px;
+}
+main .crew-members table {
+	width: 100%;
+	border-spacing: 0;
+	font-size: 18px;
+}
+main .crew-members table thead {
+	display: table;
+	width: calc(100% - 1em);
+}
+main .crew-members table thead tr {
+	background: none !important;
+	margin-bottom: 10px;
+}
+main .crew-members table thead tr th {
+	font-size: 25px;
+	font-weight: 300;
+	color: #f54c4c !important;
+}
+main .crew-members table thead tr th svg {
+	font-size: 12px;
+	color: #fff;
+}
+main .crew-members table thead tr th:nth-child(1) {
+	text-align: start;
+	width: 20%;
+}
+main .crew-members table thead tr th:nth-child(2) {
+	text-align: left;
+	width: 15%;
+}
+main .crew-members table thead tr th:nth-child(3) {
+	text-align: center;
+	width: 25%;
+}
+main .crew-members table thead tr th:nth-child(4) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-members table thead tr th:nth-child(5) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-members table tbody {
+	display: block;
+	padding-right: 10px;
+	height: 600px;
+	overflow-y: auto;
+}
+main .crew-members table tbody::-webkit-scrollbar {
+	width: 2px;
+}
+main .crew-members table tbody::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0.2784313725);
+	border-radius: 10px;
+}
+main .crew-members table tbody::-webkit-scrollbar-thumb {
+	background-color: #f54c4c;
+}
+main .crew-members table tr {
+	display: table;
+	font-family: "Barlow", sans-serif;
+	width: 100%;
+	background-color: rgba(217, 217, 217, 0.0784313725);
+}
+main .crew-members table tr:nth-child(2n) {
+	background-color: rgba(217, 217, 217, 0.05);
+}
+main .crew-members table tr td {
+	height: 60px;
+	color: rgba(255, 255, 255, 0.8);
+}
+main .crew-members table tr td:nth-child(1) {
+	display: flex;
+	align-items: center;
+	text-align: start;
+	width: 20%;
+	padding: 0 20px;
+	gap: 10px;
+}
+main .crew-members table tr td:nth-child(2) {
+	text-align: left;
+	width: 15%;
+	position: relative;
+}
+main .crew-members table tr td:nth-child(3) {
+	text-align: center;
+	width: 25%;
+}
+main .crew-members table tr td:nth-child(3) img {
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	transition: 0.2s scale;
+}
+main .crew-members table tr td:nth-child(3) #kick-member {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding: 3px;
+	margin-bottom: 9.5px;
+	border-radius: 50%;
+	border: 1px solid #f9ea77;
+	margin-left: 9px;
+	box-shadow: 0 0 5px 3px rgba(249, 234, 119, 0.2196078431);
+}
+main .crew-members table tr td:nth-child(3) #downgrade-member {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding: 3px;
+	margin-bottom: 9.5px;
+	border-radius: 50%;
+	border: 1px solid #f97777;
+	margin-left: 18px;
+	box-shadow: 0 0 5px 3px rgba(249, 119, 119, 0.22);
+}
+main .crew-members table tr td:nth-child(3) img:hover {
+	scale: 1.1;
+}
+main .crew-members table tr td:nth-child(4) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-members table tr td:nth-child(5) {
+	text-align: end;
+	width: 20%;
+	padding: 0 20px;
+}
+main .crew-members table tr td:first-child img {
+	padding-top: 20px;
+	width: 30px;
+	padding: 3px;
+	border: 2px solid rgba(245, 76, 76, 0.5);
+	border-radius: 50%;
+}
+main .crew-list {
+	display: none;
+	width: 988px;
+	padding: 0 10px;
+}
+main .crew-list table {
+	width: 100%;
+	border-spacing: 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+main .crew-list table thead {
+	display: table;
+	width: calc(100% - 1em);
+}
+main .crew-list table thead tr {
+	background: none !important;
+	margin-bottom: 10px;
+}
+main .crew-list table thead tr th {
+	font-size: 25px;
+	font-weight: 300;
+	color: #f54c4c !important;
+}
+main .crew-list table thead tr th svg {
+	font-size: 12px;
+	color: #fff;
+}
+main .crew-list table thead tr th:nth-child(1) {
+	text-align: start;
+	width: 20%;
+}
+main .crew-list table thead tr th:nth-child(2) {
+	text-align: start;
+	width: 20%;
+}
+main .crew-list table thead tr th:nth-child(3) {
+	text-align: center;
+	width: 20%;
+}
+main .crew-list table thead tr th:nth-child(4) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-list table thead tr th:nth-child(5) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-list table tbody {
+	font-family: "Barlow", sans-serif !important;
+	display: block;
+	height: 600px;
+	position: relative;
+}
+main .crew-list table tbody::-webkit-scrollbar {
+	width: 2px;
+}
+main .crew-list table tbody::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0.2784313725);
+	border-radius: 10px;
+}
+main .crew-list table tbody::-webkit-scrollbar-thumb {
+	background-color: #f54c4c;
+}
+main .crew-list table .your-crew {
+	margin-top: 20px;
+	top: 100%;
+	position: absolute;
+}
+main .crew-list table .your-crew td {
+	color: rgba(245, 76, 76, 0.8) !important;
+}
+main .crew-list table tr {
+	display: table;
+	width: 100%;
+	background-color: rgba(217, 217, 217, 0.0784313725);
+}
+main .crew-list table tr:nth-child(2n) {
+	background-color: rgba(217, 217, 217, 0.05);
+}
+main .crew-list table tr td {
+	font-family: "Barlow", sans-serif;
+	height: 60px;
+	color: rgba(255, 255, 255, 0.8);
+}
+main .crew-list table tr td:nth-child(1) {
+	background: rgba(217, 217, 217, 0.01);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	gap: 10px;
+}
+main .crew-list table tr td:nth-child(2) {
+	text-align: start;
+	width: 20%;
+}
+main .crew-list table tr td:nth-child(3) {
+	text-align: center;
+	width: 20%;
+}
+main .crew-list table tr td:nth-child(4) {
+	text-align: end;
+	width: 20%;
+}
+main .crew-list table tr td:nth-child(5) {
+	text-align: end;
+	width: 20%;
+	padding: 0 20px;
+}
+main .crew-list table tr td:first-child img {
+	width: 30px;
+	padding: 3px;
+	border: 2px solid rgba(245, 76, 76, 0.5);
+	border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

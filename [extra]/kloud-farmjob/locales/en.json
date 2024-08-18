@@ -1,0 +1,14 @@
+{
+    "no_required_item":"You don't have a %s",
+    "cant_carry":"You can't carry more %s",
+    "uprooting":"Uprooting %s",
+    "washing":"Washing %s",
+    "item_broke":"%s Broke",
+    "wash_crops":"Wash Crops",
+    "no_crops_to_wash":"You don't have any crops that needs a wash",
+    "press_wash_crops":"%s Wash Crops",
+    "open_shop":"Open Shop",
+    "open_sell":"Open Sell",
+    "sell_crops":"Sell Crops",
+    "farmer_shop":"Agriculture Shop"
+}

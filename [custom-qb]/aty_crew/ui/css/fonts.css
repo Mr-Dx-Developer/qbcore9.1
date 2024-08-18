@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "TT Lakes Neue";
+    src: url("../fonts/ttlakes/TTLakesNeue-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "TT Lakes Neue";
+    src: url("../fonts/ttlakes/TTLakesNeue-Regular.ttf");
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "TT Lakes Neue";
+    src: url("../fonts/ttlakes/TTLakesNeue-Medium.ttf");
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "TT Lakes Neue";
+    src: url("../fonts/ttlakes/TTLakesNeue-DBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "TT Lakes Neue";
+    src: url("../fonts/ttlakes/TTLakesNeue-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow/Barlow-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow/Barlow-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow/Barlow-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow/Barlow-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/barlow/Barlow-Bold.ttf");
+    font-weight: 700;
+}

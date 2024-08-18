@@ -1,0 +1,64 @@
+local QBCore = exports["qb-core"]:GetCoreObject()
+
+-- Set up a variable to hold the Discord role ID that is required to spawn a vehicle
+local requiredRole = "965000105910472752" -- Replace with the actual role ID
+local guildId = "965000105730117632" -- Replace with the actual guild ID
+local discordBotToken = "MTEwMzU2NzQ3OTUzMzQ5MDMwNg.GXYtSI.p6iAtHGqxUbnr6-cE5-TPrPKhQCtApmQbIwFU0" -- Replace with the actual Discord bot token
+
+-- Register the command handler for the /nitro command
+RegisterCommand("nitro", function(source, args, rawCommand)
+    -- Get the player's Discord ID
+    local playerId = source
+    local discordId = nil
+    local identifiers = GetPlayerIdentifiers(playerId)
+    for _, identifier in ipairs(identifiers) do
+        if string.match(identifier, "^discord:") then
+            discordId = string.sub(identifier, 9)
+            break
+        end
+    end
+
+    -- Check if the player has the required Discord role using a Discord bot
+    if discordId ~= nil then
+        PerformHttpRequest("https://discordapp.com/api/guilds/" .. guildId .. "/members/" .. discordId, function(statusCode, responseText, headers)
+            if statusCode == 200 then
+                local member = json.decode(responseText)
+                local hasRole = false
+                for _, roleId in ipairs(member.roles) do
+                    if roleId == requiredRole then
+                        hasRole = true
+                        break
+                    end
+                end
+                if not hasRole then
+                    -- Inform the player that they don't have the required role
+                    TriggerClientEvent("chat:addMessage", playerId, {
+                        color = { 255, 0, 0 },
+                        args = { "Server", "You don't have permission to use this command." }
+                    })
+                    return
+                end
+
+                local playerPed = GetPlayerPed(source)
+                local playerCoords = GetEntityCoords(playerPed)
+                local veh = QBCore.Functions.SpawnVehicle(source, 't20', playerCoords, true)
+                local vehNetId = NetworkGetNetworkIdFromEntity(veh)
+                TriggerClientEvent('qb-smallresources:client:VehicleSpawn', -1, vehNetId) -- Send to all clients
+
+                TriggerClientEvent("chat:addMessage", playerId, {
+                    color = { 0, 255, 0 },
+                    args = { "Server", "Your Vehicle is ready to drive in street" }
+                })
+
+            else
+                print("Failed to get member information for Discord ID " .. discordId .. ": " .. tostring(statusCode))
+            end
+        end, "GET", "", {
+            ["Content-Type"] = "application/json",
+            ["Authorization"] = "Bot " .. discordBotToken
+        })
+    else
+        print("Failed to get Discord ID for player " .. playerId)
+    end
+end, false)
+

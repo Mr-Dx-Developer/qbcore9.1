@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Data>
+  </Data>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_PMX_CLIP</Name>
+      <Model>pmx_mag_fluffymods</Model>
+      <LocName></LocName>
+      <LocDesc></LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="25" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+		<Item type="CWeaponComponentSuppressorInfo">
+			<Name>COMPONENT_PMX_SUPP</Name>
+			<Model>pmx_supp_fluffymods</Model>
+			<LocName></LocName>
+			<LocDesc></LocDesc>
+			<AttachBone>AAPSupp</AttachBone>
+			<WeaponAttachBone>WAPSupp</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<bShownOnWheel value="true"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<MuzzleBone>Gun_SuMuzzle</MuzzleBone>
+			<FlashFx>muz_pistol_silencer</FlashFx>
+            <ShouldSilence value="true" />		
+		</Item>	
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_PMX_GRIP</Name>
+			<Model>pmx_grip_fluffymods</Model>
+			<LocName>"GRIP"</LocName>
+			<LocDesc>"GRIP"</LocDesc>
+			<AttachBone>AAPGrip</AttachBone>
+			<WeaponAttachBone>WAPGrip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>			
+  </Infos>
+  <InfoBlobName>AR</InfoBlobName>
+</CWeaponComponentInfoBlob>

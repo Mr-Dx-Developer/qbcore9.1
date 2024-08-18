@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="generalContainer">
+            <div class="topSection">
+                <div class="titleArea">
+                    <p class="title1">QBCore#4011</p>
+                    <p class="title2">DONATE</p>
+                </div>
+                <div class="topRectangle"></div>
+            </div>
+
+            <div class="categorieSection">
+                <div class="mainMenuButton">
+                    <i class="fa-solid fa-house" id="homeIcon"></i>
+                </div>
+                <div class="categorieItemList" id="categorieItemListID"></div>
+                <div class="charInfoSection">
+                    <div class="profileImageSection">
+                        <img src="./images/pokemon.jpg" alt="" />
+                    </div>
+                    <div class="charNameSection">
+                        <div class="charName">QBCore#4011</div>
+                        <div class="charSurName">V9</div>
+                    </div>
+
+                    <div class="profileCreditSection">
+                        <i class="fa-solid fa-credit-card" id="creditCardIcon"></i>
+                        <div class="creditCount">500</div>
+                        <div class="creditText">CR</div>
+                    </div>
+
+                    <div class="buyCreditButton">KREDİ AL</div>
+                </div>
+            </div>
+
+            <div class="generalMiddle">
+                <div class="homeMenu">
+                    <div class="leftRedeemBox">
+				<div class="redeemCodeTextArea">
+                            <div class="redeemText">COUPON</div>
+                            <div class="codeText">CODE</div>
+                        </div>
+                        <div class="redeemCodeDescArea">
+                           By entering the coupon code, you can have the credit worth the code.
+                           You can buy these codes for gifts or use them as rewards.
+                        </div>
+                        <!-- <div class="youCanEnterBelowArea"></div> -->
+                        <div class="redeemInfoArea">
+                            <i class="fa-solid fa-circle-info" id="InfoIcon"></i>
+                            <div class="redeemInfoText">You can write the code below</div>
+                        </div>
+                        <input
+                            type="text"
+                            class="writeTheCode"
+                            id="redeemCodeInput"
+                            value=""
+                            onblur="if(this.value == '') { this.value='Write the code..'}"
+                            onfocus="if (this.value == 'Write the code..') {this.value=''}"
+                        />
+                        <div class="approveButton">Confirm</div>
+                        <div class="blackLinear"></div>
+                        <img src="./images/redeem.png" alt="" />
+                    </div>
+
+                    <div class="upperMidCarBox">
+                        <div class="carBoxInfoArea">
+                            <i class="fa-solid fa-circle-info" id="InfoIconCar"></i>
+					<div class="carBoxInfoText">You can view it by clicking the button below</div>
+                        </div>
+                        <div class="carBoxTitleArea">
+                            <div class="carBoxDoYouNeed">Is it a vehicle</div>
+                            <div class="boxACarText">need?</div>
+                        </div>
+                        <div class="carBoxDescription">YOU CAN SEE THE VEHICLES BY CLICKING THE BUTTON BELOW.</div>
+                        <div class="carBoxButton">Tools</div>
+                        <div class="carButtonBelowText">YOU CAN VIEW VEHICLES BY CLICKING THE BUTTON.</div>
+                        <div class="carBoxLinear"></div>
+                        <img src="./images/car.png" alt="" />
+                    </div>
+
+                    <div class="bottomMidGunBox">
+                        <div class="gunBoxInfoArea">
+                            <i class="fa-solid fa-circle-info" id="InfoIconGun"></i>
+                            <div class="gunBoxInfoText">You can view it by clicking the button below</div>
+                        </div>
+                        <div class="gunBoxTitleArea">
+                            <div class="gunDoYouNeedText">Is it a weapon</div>
+                            <div class="boxAGunText">Need ?</div>
+                        </div>
+                        <div class="gunBoxDescription">YOU CAN SEE WEAPONS BY CLICKING THE BUTTON BELOW.</div>
+                        <div class="gunBoxButton">GUN</div>
+                        <div class="gunButtonBelowText">YOU CAN SEE WEAPONS BY CLICKING THE BUTTON.</div>
+                        <div class="gunBoxLinear"></div>
+                        <img src="./images/gun.png" alt="" />
+                    </div>
+
+                    <div class="upperRightOtherBox">
+                        <div class="otherBoxInfoArea">
+                            <i class="fa-solid fa-circle-info" id="InfoIconOther"></i>
+					<div class="otherBoxInfoText">Click for details</div>
+                        </div>
+                        <div class="otherBoxButton">OTHER</div>
+                        <div class="otherBoxDescription">You can go to the customization menu by clicking the button above.</div>
+                        <div class="otherBoxLinear"></div>
+                        <img src="./images/other.png" alt="" />
+                    </div>
+
+                    <div class="bottomRightMoneyBox">
+                        <div class="moneyBoxInfoArea">
+                            <i class="fa-solid fa-circle-info" id="InfoIconMoney"></i>
+                            <div class="moneyBoxInfoText">Click for details</div>
+                        </div>
+                        <div class="moneyBoxButton">MONEY</div>
+                        <div class="moneyBoxDescription">You can go to the money purchase menu by clicking the button above.</div>
+                        <div class="moneyBoxLinear"></div>                        <img src="./images/money.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="vehicleMenu">
+                    <div class="leftSelectedCarDetailsArea">
+                        <div class="leftCarNameArea">
+                            <div class="leftCarBrand">AUDI</div>
+                            <div class="leftCarModel">RS Q8</div>
+                        </div>
+
+                        <div class="leftCarYear">2022 MODEL</div>
+
+                        <div class="leftCarImageArea">
+                            <img id="leftCarImage" src="./images/audi.png" alt="" />
+                        </div>
+
+                        <div class="leftGraphArea">
+                            <div class="graphAreaItem">
+                                <span class="material-icons" id="leftGraphIcon"> speed </span>
+                                <div class="leftGraphOut">
+                                    <div id="leftSpeedGraph" class="leftGraphFill"></div>
+                                </div>
+                                <div id="leftTopSpeedText" class="graphValueText">350</div>
+                            </div>
+                            <div class="graphAreaItem">
+                                <span class="material-icons" id="leftGraphIcon"> tire_repair </span>
+                                <div class="leftGraphOut">
+                                    <div id="leftBrakeGraph" class="leftGraphFill"></div>
+                                </div>
+                                <div id="leftBrakeText" class="graphValueText">350</div>
+                            </div>
+                            <div class="graphAreaItem">
+                                <span class="material-icons" id="leftGraphIcon"> shield </span>
+                                <div class="leftGraphOut">
+                                    <div id="leftRobustnessGraph" class="leftGraphFill"></div>
+                                </div>
+                                <div id="leftRobustness" class="graphValueText">350</div>
+                            </div>
+                        </div>
+
+                        <div class="leftItemCheckArea">
+                            <input type="checkbox" name="" id="leftCheckBox" />
+                            <label for="leftCheckBox" id="checkBoxLabel">
+                                Özel plaka mı lazım? <span id="cstmPltPrice">( 15 CR )</span>
+                            </label>
+                        </div>
+
+                        <input
+                            type="text"
+                            class="leftItemPlateInput"
+                            value="enter plate..."
+                            onblur="if(this.value == '') { this.value='enter plate...'}"
+                            onfocus="if (this.value == 'enter plate...') {this.value=''}"
+                        />
+
+                        <div class="leftBuyButton">
+                            <div class="buyButtonPrice">
+                                <span id="buyPrice">250</span>
+                                <span id="buyPriceText">CR</span>
+                            </div>
+                            <div class="buyButtonBuyText">Satın al</div>
+                        </div>
+                    </div>
+
+                    <div class="rightCarListArea"></div>
+                </div>
+
+                <div class="itemsMenu">
+                    <div class="itemsMenuItemList">
+                        <div class="itemsMenuItem">
+                            <div class="itemMenuItemNameArea">Heavy Shotgun</div>
+                            <div class="itemMenuItemImageAreas">
+                                <img src="./images/guns.png" alt="" />
+                            </div>
+                            <div class="itemMenuItemCreditArea">
+                                <i class="fa-solid fa-credit-card" id="creditCardIconItemList"></i>
+                                <span class="ItemMenuItemPrice">250</span>
+                                <span class="ItemMenuItemPriceText">CR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buyCreditMenu">
+                    <div class="buyCreditFirstBox">
+                        <div class="firstBoxPrice">1100$</div>
+                        <div class="firstBoxImageArea">
+                            <img class="image-1" src="./images/firstBoxCash.png" alt="" />
+                        </div>
+                        <div class="firstBoxGetCredit">300 CR</div>
+                        <div class="firstBoxExtraCredit">+60 Bonus CR</div>
+                    </div>
+                    <div class="buyCreditSecondBox">
+                        <div class="secondBoxPrice">200$</div>
+                        <div class="secondBoxImageArea">
+                            <img class="image-2" src="./images/secondBoxCash.png" alt="" />
+                        </div>
+                        <div class="secondBoxGetCredit">500 CR</div>
+                        <div class="secondBoxExtraCredit">+100 Bonus CR</div>
+                    </div>
+                    <div class="buyCreditThirdBox">
+                        <div class="thirdBoxPrice">1000$</div>
+                        <div class="thirdBoxGetCredit">2000 CR</div>
+                        <div class="thirdBoxExtraCredit">+500 Bonus CR</div>
+                        <div class="thirdImageArea">
+                            <img class="image-3" src="./images/thirtBoxCash.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="buyCreditFourBox">
+                        <div class="fourBoxPrice">500$</div>
+                        <div class="fourBoxImageArea">
+                            <img class="image-4" src="./images/fourBoxCash.png" alt="" />
+                        </div>
+                        <div class="fourBoxGetCredit">1000 CR</div>
+                        <div class="fourBoxExtraCredit">+250 Bonus CR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="youWantBuySection">
+            <div class="wantBuyPopUp">
+                <div class="wantBuyTitleArea">
+                    <span class="youWantToText">Do you want to</span>
+                    <span class="youWantBuyText">buy?</span>
+                </div>
+                <div class="popUpRectangle"></div>
+                <div class="popUpItemList">
+                    <!-- <div class="popUpItem">
+                        <div class="popUpItemName">AUDI RS Q8 2022 MODEL</div>
+                        <div class="popUpItemCost">250 CR</div>
+                    </div> -->
+                    <!-- <div class="popUpItem">
+                        <div class="popUpItemName">AUDI RS Q8 2022 MODEL</div>
+                        <div class="popUpItemCost">250 CR</div>
+                    </div>
+                    <div class="popUpItem">
+                        <div class="popUpItemName">AUDI RS Q8 2022 MODEL</div>
+                        <div class="popUpItemCost">250 CR</div>
+                    </div> -->
+                </div>
+                <div class="popUpButtons">
+    <div class="popUpButtonItem" id="popUpCancel">Cancel</div>
+                    <div class="popUpButtonItem" id="popUpBuy">Buy</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customizationSection">
+            <div class="customizePopUp">
+                <div class="customizeTitleArea">
+                    <span class="customizeBuyText">Customize</span>
+                </div>
+                <div class="popUpRectangle"></div>
+                <div class="customizeItemArea">
+                    <div class="customizeInfo">You must be in the car you want to customize.</div>
+                    <input                        type="text"
+                        class="customInput"
+                        name=""
+                        id=""
+                        value="Enter.."
+                        onblur="if(this.value == '') { this.value='Enter..'}"
+                        onfocus="if (this.value == 'Enter..') {this.value=''}"
+                    />
+                </div>
+                <div class="popUpButtons">
+                    <div class="popUpButtonItem" id="customizeUpCancel">give up</div>
+                    <div class="popUpButtonItem" id="customizeBuy">Buy</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notifySectionXX">
+            <div class="notifyArea"></div>
+        </div>
+
+        <div class="succesfullyArea">
+            <div class="succesNotify">Thanks for the purchase!</div>
+        </div>
+
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="js/progressbar.js"></script>
+        <script src="js/app.js?v=1"></script>
+    </body>
+</html>

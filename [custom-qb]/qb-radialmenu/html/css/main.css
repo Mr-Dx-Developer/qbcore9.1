@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'a_RubricaXtCn';
+}
+
+@font-face {
+    font-family: 'a_RubricaXtCn';
+    src: url('https://cdn.discordapp.com/attachments/1103954537586364436/1103954575100231720/rxtcn.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: normal;
+    color: white;
+}
+
+div.info {
+    margin: 10px 0;
+}
+
+div.info * {
+    color: white;
+}
+
+#icons {
+    display: none;
+    filter: drop-shadow(2px 2px 15px #bfc8cf); 
+}
+
+.container {
+    position: absolute;
+    left: 1000px;
+}
+
+#vehicle {
+    fill: white;
+}
+
+
+div.menuHolder {
+    user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+
+svg.icons {
+    display: none;
+    filter: drop-shadow(2px 2px 15px #bfc8cf); 
+}
+
+svg.menu {
+    position: absolute;
+    overflow: visible;
+    transition: .1s;
+    transition-timing-function: ease-out;
+}
+
+svg.menu.inner {
+    transform: scale(1.2);
+    opacity: 10;
+    visibility: hidden;
+}
+
+svg.menu.outer {
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu > g > path {
+     fill-opacity: 0.6;
+   fill: black;
+ 
+}
+ 
+svg.menu > g.sector > path {
+    cursor: pointer;
+}
+ 
+g.center circle {
+     filter: drop-shadow(2px 2px 15px #bfc8cf); 
+        
+}
+
+svg.menu > g.sector > text,
+svg.menu > g.sector > use {
+     font-family: 'a_RubricaXtCn';
+    font-weight: 100px;
+    margin-top: 10px;
+    font-size: 5px;
+    cursor: pointer;
+     fill: transparent; 
+}
+
+svg.menu > g.sector:hover > path {
+    fill: #ff0039;
+     fill-opacity: 0.9;
+     transform: scale(1.1);
+}
+
+
+
+
+svg.menu > g.center > circle {
+    cursor: pointer;
+   font-size: 4.5px;
+   fill:black;
+   filter: drop-shadow(2px 2px 15px #bfc8cf);  
+     fill-opacity: 0.8;
+ 
+    
+}
+ 
+
+svg.menu > g.center > text,
+svg.menu > g.center > use {
+    margin-top: 5px; 
+    font-size: 9px;
+    font-weight:100;
+    cursor: pointer;
+    fill: transparent;
+}
+
+.sector svg {
+    pointer-events:none;
+} 
+
+#center-description {
+    position:absolute;
+    color:white;
+    z-index:100;
+    left:50%;
+    font-size: 29px; 
+    font-weight:100;
+    top:calc(52% - 20px);
+    translate: -50% -50%;
+    text-align:center; 
+    word-wrap:break-word; 
+}
